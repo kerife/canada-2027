@@ -1,6 +1,6 @@
 # Canadá 2027 · Un invierno para nosotros
 
-Itinerario visual de Quebec y Montreal para febrero de 2027: recorridos por día, transportes, fotografías de lugares, propuestas gastronómicas y presupuesto interactivo en MXN/CAD.
+Itinerario visual de Quebec, Ottawa, Mont-Tremblant y Montreal para febrero de 2027: recorridos por día, transportes, fotografías de lugares, propuestas gastronómicas y presupuesto interactivo en MXN/CAD.
 
 **Sitio:** https://kerife.github.io/canada-2027/
 
@@ -35,4 +35,4 @@ Ver [CREDITS.md](CREDITS.md). Las imágenes de terceros conservan sus derechos; 
 
 ## Revisión del itinerario
 
-La propuesta contempla cuatro noches en Quebec y ocho en Montreal, Biodôme el 24 y traslado directo a YUL el 25. El presupuesto comienza como total parcial mientras no se elija un escenario de alojamiento; comparar un hotel no equivale a reservarlo.
+La propuesta contempla cuatro noches en Quebec, dos en Ottawa, una en Mont-Tremblant y cinco en Montreal. La clase de esquí se propone para el 20, el aniversario se conserva el 22 y Biodôme el 24. El presupuesto comienza como total parcial mientras falten hoteles, traslados o experiencias seleccionadas. Las cotizaciones antiguas de ocho noches en Montreal no aplican. Introducir importes no equivale a reservar.

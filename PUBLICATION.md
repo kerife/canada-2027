@@ -15,8 +15,8 @@ El sitio permanece disponible sin mantener encendida la computadora. No utiliza 
 
 1. Revisar en Actions que el despliegue `pages build and deployment` termine correctamente.
 2. Visitar el enlace público y confirmar que aparece la nueva versión.
-3. Probar días 13, 14, 16 y 22; abrir detalles y comprobar fotografías.
-4. Modificar una opción del presupuesto y restablecerla.
+3. Probar días 13, 14, 17, 18, 19, 20, 21 y 22; abrir detalles y comprobar fotografías.
+4. Completar importes pendientes del presupuesto, borrar uno para confirmar que vuelve a total parcial y restablecer la propuesta.
 5. Comprobar móvil y escritorio, sin desplazamiento horizontal inesperado.
 6. Si aparece una versión anterior, recargar sin caché. Si aparece 404, comprobar rama, carpeta e `index.html` en la raíz.
 
