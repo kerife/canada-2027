@@ -32,3 +32,7 @@ Para revertir, recuperar `index.html` de una revisión anterior y guardarlo en u
 ## Créditos
 
 Ver [CREDITS.md](CREDITS.md). Las imágenes de terceros conservan sus derechos; no se les atribuye una licencia libre. Las fuentes incluyen sus avisos dentro del HTML.
+
+## Revisión del itinerario
+
+La propuesta contempla cuatro noches en Quebec y ocho en Montreal, Biodôme el 24 y traslado directo a YUL el 25. El presupuesto comienza como total parcial mientras no se elija un escenario de alojamiento; comparar un hotel no equivale a reservarlo.

@@ -16,7 +16,6 @@ Las imágenes de eventos son de archivo; no confirman el programa de 2027. Algun
 | Instalación de Montréal en Lumière en una edición anterior | [Fuente](https://www.mtl.org/en/experience/reasons-visit-winter) | Eva Blue / Tourisme Montréal |
 | Calle Saint-Paul en el Viejo Montreal | [Fuente](https://www.mtl.org/en/experience/reasons-visit-winter) | Tourisme Montréal |
 | Habitación Champlain con cama king en Auberge Aux Deux Lions | [Fuente](https://aubergeauxdeuxlions.com/en/node/112) | Auberge Aux Deux Lions |
-| Habitación King del Fairfield Inn & Suites Montreal Airport | [Fuente](https://www.marriott.com/en-us/hotels/yulfi-fairfield-inn-and-suites-montreal-airport/photos/) | Marriott / Fairfield Inn & Suites Montreal Airport |
 | Habitación Standard del Hotel Monville en Montreal | [Fuente](https://www.hotelmonville.com/en/) | Hôtel Monville |
 | Interior del Biodôme de Montreal | [Fuente](https://www.mtl.org/en/what-to-do/activities/biodome-de-montreal) | Tourisme Montréal |
 | Sala de arte quebequense y canadiense del Museo de Bellas Artes de Montreal | [Fuente](https://www.mtl.org/en/experience/museums-montreal) | Tourisme Montréal |
@@ -26,7 +25,6 @@ Las imágenes de eventos son de archivo; no confirman el programa de 2027. Algun
 | Fachada de la Gare du Palais, Québec | [Fuente](https://www.quebec-cite.com/fr/quoi-faire-quebec/gare-du-palais) | Guy Lessard / Destination Québec cité |
 | Interior de la Gare Centrale de Montréal | [Fuente](https://www.mtl.org/fr/quoi-faire/la-ville/gare-centrale) | © Gare centrale / Tourisme Montréal |
 | Terminal y torre de control de YUL Montréal-Trudeau, con el letrero YUL visible | [Fuente](https://www.mtl.org/en/experience/airport-yul-guide) | ADM Aéroports de Montréal / Tourisme Montréal |
-| Acceso peatonal exterior a la terminal de YUL Montréal-Trudeau | [Fuente](https://www.mtl.org/en/experience/airport-yul-guide) | ADM Aéroports de Montréal / Tourisme Montréal |
 | Instructor y grupo de esquiadores durante una clase en Le Relais | [Fuente](https://www.skirelais.com/hiver/ecole-de-glisse/cours-de-groupe/) | Centre de ski Le Relais; fotógrafo no identificado por la página |
 | Pasillo y asientos de la Terminal 2 del AICM, publicados en la galería de su remodelación | [Fuente](https://www.gob.mx/aicm/galerias/terminal-2-remodelacion) | Aeropuerto Internacional de la Ciudad de México / Gobierno de México |
 | Fachada de St-Viateur Bagel en Montreal | [Fuente](https://www.stviateurbagel.com/) | St-Viateur Bagel; archivo identificado como Adriano Ciampoli |
@@ -41,5 +39,7 @@ Las imágenes de eventos son de archivo; no confirman el programa de 2027. Algun
 | Fachada acristalada y rótulo del Centre Vidéotron al atardecer | [Fuente](https://business.quebec-cite.com/fr/entreprises/centre-videotron) | Stéphane Groleau / Québec Destination affaires |
 | Jugadores de los Canadiens sobre el hielo del Centre Bell, con público en las gradas | [Fuente](https://www.mtl.org/en/what-to-do/culture-arts-heritage/bell-centre) | Tourisme Montréal · autor según ficha de origen |
 | Campus de McGill en invierno: bancos, árboles y edificios históricos bajo la nieve | [Fuente](https://www.mcgill.ca/facilities/article/winter-coming-help-us-keep-mcgill-spaces-good-shape) | McGill University · autor no identificado |
+| Habitación del Fairfield by Marriott Montreal Downtown | [Fuente](https://www.mtl.org/en/accommodations/fairfield-by-marriott-montreal-downtown) | Tourisme Montréal · ficha del hotel |
+| Patio y fachada del Hyatt Centric Montréal junto a Gare Viger | [Fuente](https://www.mtl.org/en/accommodations/hyatt-centric-ville-marie-montreal) | Tourisme Montréal · ficha del hotel |
 
 Las fuentes Newsreader y Plus Jakarta Sans se incluyen bajo SIL Open Font License 1.1. Los avisos completos están incorporados en index.html.
