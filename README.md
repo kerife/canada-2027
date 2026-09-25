@@ -35,4 +35,4 @@ Ver [CREDITS.md](CREDITS.md). Las imágenes de terceros conservan sus derechos; 
 
 ## Revisión del itinerario
 
-La propuesta contempla cuatro noches en Quebec, dos en Ottawa, una en Mont-Tremblant y cinco en Montreal. La clase de esquí se propone para el 20, el aniversario se conserva el 22 y Biodôme el 24. El presupuesto comienza como total parcial mientras falten hoteles, traslados o experiencias seleccionadas. Las cotizaciones antiguas de ocho noches en Montreal no aplican. Introducir importes no equivale a reservar.
+La propuesta contempla cuatro noches en Quebec, dos en Ottawa y seis en Montreal. La excursión de esquí desde el hotel de Montreal a Tremblant se propone para el 20, con regreso al mismo hotel, el aniversario se conserva el 22 y Biodôme el 24. El presupuesto comienza como total parcial mientras falten hoteles, traslados o experiencias seleccionadas. North Adventures es candidato, pero su ficha asigna Sutton a principiantes: Tremblant aún requiere confirmación. Alternativa: transporte privado más escuela oficial. Las cotizaciones antiguas de Montreal no aplican. Introducir importes no equivale a reservar.
