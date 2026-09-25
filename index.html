@@ -36,6 +36,9 @@
 @media(max-width:1000px) and (min-width:651px){.activity-grid{gap:20px}.activity-body h4{font-size:24px}.activity-body .place-intro{font-size:14px}.note-visual{padding:18px}.note-visual>p{font-size:27px}}
 @media(max-width:650px){.activity-grid{gap:40px}.activity-card>.photo{aspect-ratio:4/3}.activity-body h4{font-size:28px}.activity-body .place-intro{font-size:15px}.activity-body{padding-top:20px}.photo-credit{max-width:100%}.place-highlights{font-size:12px}.story-sources .source{font-size:11px}.note-visual{padding:25px}}
 @media print{.activity-body h4{font-size:18px}.activity-body .place-intro{font-size:11px}.place-highlights,.slot-duration{font-size:9px}.note-visual{height:120px;aspect-ratio:auto}.note-visual>p{font-size:22px}.story-sources{display:none}.practical{font-size:10px}}
+
+/* Keep every budget control reachable when the summary exceeds the viewport. */
+@media screen and (min-width:1001px){.summary-card{max-height:calc(100dvh - 60px);overflow-y:auto;scrollbar-gutter:stable}}
 </style>
 </head>
 <body>
