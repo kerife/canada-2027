@@ -36,3 +36,5 @@ Ver [CREDITS.md](CREDITS.md). Las imágenes de terceros conservan sus derechos; 
 ## Revisión del itinerario
 
 La propuesta contempla cuatro noches en Quebec, dos en Ottawa y seis en Montreal. La excursión de esquí desde el hotel de Montreal a Tremblant se propone para el 20, con regreso al mismo hotel, el aniversario se conserva el 22 y Biodôme el 24. El presupuesto comienza como total parcial mientras falten hoteles, traslados o experiencias seleccionadas. North Adventures es candidato, pero su ficha asigna Sutton a principiantes: Tremblant aún requiere confirmación. Alternativa: transporte privado más escuela oficial. Las cotizaciones antiguas de Montreal no aplican. Introducir importes no equivale a reservar.
+
+Concord Tours se añade como opción turística para revisar: visita a Tremblant sin clases ni equipo. Esquiar sigue siendo una prioridad, con fecha, transporte y coste por resolver. La referencia publicada de 159.99 CAD por adulto no es cotización para febrero de 2027.
