@@ -18,7 +18,9 @@ export async function content(page){return page.evaluate(()=>{
   root.querySelectorAll('script,style,[data-editorial-ui],noscript').forEach(n=>n.remove());
   const norm=s=>s.replace(/\s+/g,' ').trim();
   const text=norm(root.textContent);
+  const numeric=[];const walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT);
+  while(walker.nextNode())numeric.push(...(walker.currentNode.textContent.match(/\d+(?:[.,:/–−-]\d+)*(?:%|h)?/g)||[]));
   const count=items=>Object.fromEntries([...new Set(items)].sort().map(s=>[s,items.filter(x=>x===s).length]));
   const states=['Confirmado publicado','Sujeto a cambio','Estimado','Pendiente de confirmar','Propuesto','Plan base'];
-  return {text,hrefs:count([...root.querySelectorAll('a[href]')].map(a=>a.getAttribute('href'))),numbers:count(text.match(/\d+(?:[.,:/–−-]\d+)*(?:%|h)?/g)||[]),states:Object.fromEntries(states.map(s=>[s,text.split(s).length-1])),blocks:[...root.querySelectorAll('p,h1,h2,h3,h4,li,td,th,dd,dt,summary,figcaption,label,button')].map(n=>norm(n.textContent)).filter(Boolean),structure:{days:root.querySelectorAll('.print-day').length,bases:root.querySelectorAll('.route-list>li').length,hotels:root.querySelectorAll('.hotel-card').length,slots:root.querySelectorAll('.activity-card').length}};
+  return {text,hrefs:count([...root.querySelectorAll('a[href]')].map(a=>a.getAttribute('href'))),numbers:count(numeric),states:Object.fromEntries(states.map(s=>[s,text.split(s).length-1])),blocks:[...root.querySelectorAll('p,h1,h2,h3,h4,li,td,th,dd,dt,summary,figcaption,label,button')].map(n=>norm(n.textContent)).filter(Boolean),structure:{days:root.querySelectorAll('.print-day').length,bases:root.querySelectorAll('.route-list>li').length,hotels:root.querySelectorAll('.hotel-card').length,slots:root.querySelectorAll('.activity-card').length}};
 });}
