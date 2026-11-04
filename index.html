@@ -98,6 +98,53 @@
 .calendar-marker{display:block;max-width:86px;margin:4px auto 0;color:var(--wine);font-size:8px;font-weight:600;line-height:1.15;text-align:center}
 .calendar-note{margin:18px 0 28px;padding:18px 22px;border-left:3px solid var(--wine);background:#eef1eb}.calendar-note>strong{font:600 11px/1.4 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--wine)}.calendar-note p{margin:8px 0 10px;max-width:950px;font-size:13px;line-height:1.6}.calendar-note .evidence{display:inline-block}.calendar-sources{display:flex;flex-wrap:wrap;gap:4px 14px;margin-top:8px}.calendar-sources .source{font-size:11px}
 @media(max-width:650px){.calendar-marker{font-size:7px;max-width:55px;letter-spacing:-.02em}.calendar-note{padding:14px;margin:14px 0 22px}.calendar-note p{font-size:12px}.calendar-sources{gap:4px 10px}}
+
+/* Invierno editorial cálido. Presentation only; canonical content is unchanged. */
+:root {
+  --bg: #f7f7f2;
+  --surface: #fff;
+  --ink: #203c43;
+  --ink-muted: #526368;
+  --accent: #a4362d;
+  --line: #d5ddda;
+  --state-confirmed: #235449;
+  --state-confirmed-bg: #e9f2eb;
+  --state-change: #725014;
+  --state-change-bg: #fbf0d8;
+  --state-estimated: #435d76;
+  --state-estimated-bg: #eaf0f6;
+  --state-pending: #765057;
+  --state-pending-bg: #f5e9eb;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-24: 96px;
+  --radius: 4px;
+  --shadow: 0 8px 32px #203c430c;
+  --motion-fast: 180ms;
+  --motion-enter: 480ms;
+  --paper: var(--bg);
+  --white: var(--surface);
+  --muted: var(--ink-muted);
+  --wine: var(--accent);
+  --green: var(--ink);
+  --rose: #f4eae5;
+  --gold: var(--accent);
+}
+body { background: var(--bg); color: var(--ink); }
+h1,h2,h3,h4 { text-wrap: balance; }
+h2 { font-size: clamp(2.4rem, 5.1vw, 4.4rem); line-height: 1.04; }
+p { text-wrap: pretty; }
+.price,.total,.small-total,.daily-table,.base-row { font-variant-numeric: tabular-nums; }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+@media(prefers-reduced-motion:reduce) {
+  *,*::before,*::after { animation:none!important; transition:none!important; scroll-behavior:auto!important; }
+}
 </style>
 </head>
 <body>
@@ -530,6 +577,11 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
     printDetails.forEach(detail=>detail.open=false);
     printDetails=[];selectDay(active);
   });
+})();
+</script>
+<script>/* Progressive presentation enhancements; budget formulas remain in app.js. */
+(() => {
+  'use strict';
 })();
 </script>
 </body></html>

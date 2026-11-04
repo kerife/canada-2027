@@ -1,0 +1,46 @@
+/* Invierno editorial cálido. Presentation only; canonical content is unchanged. */
+:root {
+  --bg: #f7f7f2;
+  --surface: #fff;
+  --ink: #203c43;
+  --ink-muted: #526368;
+  --accent: #a4362d;
+  --line: #d5ddda;
+  --state-confirmed: #235449;
+  --state-confirmed-bg: #e9f2eb;
+  --state-change: #725014;
+  --state-change-bg: #fbf0d8;
+  --state-estimated: #435d76;
+  --state-estimated-bg: #eaf0f6;
+  --state-pending: #765057;
+  --state-pending-bg: #f5e9eb;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-24: 96px;
+  --radius: 4px;
+  --shadow: 0 8px 32px #203c430c;
+  --motion-fast: 180ms;
+  --motion-enter: 480ms;
+  --paper: var(--bg);
+  --white: var(--surface);
+  --muted: var(--ink-muted);
+  --wine: var(--accent);
+  --green: var(--ink);
+  --rose: #f4eae5;
+  --gold: var(--accent);
+}
+body { background: var(--bg); color: var(--ink); }
+h1,h2,h3,h4 { text-wrap: balance; }
+h2 { font-size: clamp(2.4rem, 5.1vw, 4.4rem); line-height: 1.04; }
+p { text-wrap: pretty; }
+.price,.total,.small-total,.daily-table,.base-row { font-variant-numeric: tabular-nums; }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+@media(prefers-reduced-motion:reduce) {
+  *,*::before,*::after { animation:none!important; transition:none!important; scroll-behavior:auto!important; }
+}
