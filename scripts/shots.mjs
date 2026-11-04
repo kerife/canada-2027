@@ -1,8 +1,9 @@
-import {open,out,mkdir} from './common.mjs';
+import {open,out,mkdir,readyPhotos} from './common.mjs';
 await mkdir(out,{recursive:true});
 for(const [width,height] of [[390,844],[768,1024],[1440,900]]){
  const {browser,page}=await open(width,height);
  try {
+  await readyPhotos(page);
   await page.screenshot({path:`${out}/hero-${width}.png`});
   await page.screenshot({path:`${out}/full-${width}.png`,fullPage:true});
   for(const id of ['actualizacion','recorrido','aniversario','hoteles','presupuesto','preparativos']){

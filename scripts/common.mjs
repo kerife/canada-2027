@@ -8,11 +8,13 @@ export async function open(width=390, height=844) {
   const browser=await chromium.launch({headless:true});
   const context=await browser.newContext({viewport:{width,height},reducedMotion:'reduce'});
   const page=await context.newPage();
+  const errors=[];page.on('pageerror',error=>errors.push(error.message));
   await page.goto(`${base}/${baseline?'baseline/':''}index.html`);
   await page.evaluate(()=>document.fonts.ready);
-  return {browser,page};
+  return {browser,page,errors};
 }
 export async function save(name,data,dir=out){await mkdir(dir,{recursive:true});await writeFile(`${dir}/${name}`,JSON.stringify(data,null,2)+'\n');}
+export async function readyPhotos(page){await page.evaluate(async()=>{for(const image of document.images)image.loading='eager';await Promise.all([...document.images].map(image=>image.decode().catch(()=>{})));});}
 export async function content(page){return page.evaluate(()=>{
   const root=document.body.cloneNode(true);
   root.querySelectorAll('script,style,[data-editorial-ui],noscript').forEach(n=>n.remove());

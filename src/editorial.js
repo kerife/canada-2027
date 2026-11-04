@@ -6,7 +6,11 @@
     if(text)node.textContent=text;return node;
   };
   const jump=document.querySelector('.hero-jump');
-  jump.addEventListener('click',()=>{document.getElementById('recorrido').scrollIntoView({block:'start'});document.getElementById('tab-13').focus({preventScroll:true});});
+  jump.addEventListener('click',()=>{
+    const trip=document.getElementById('recorrido');const selected=document.querySelector('[role=tab][aria-selected=true]');
+    const inList=trip.classList.contains('list-view');const target=inList?document.getElementById(selected.getAttribute('aria-controls')):selected;
+    (inList?target:trip).scrollIntoView({block:'start'});target.focus({preventScroll:true});
+  });
   const nav=document.querySelector('.topbar nav');
   const sectionLinks=[...nav.querySelectorAll('a')];
   const sections=sectionLinks.map(a=>document.querySelector(a.getAttribute('href')));
@@ -85,6 +89,7 @@
     link.setAttribute('aria-label',link.textContent.trim()+': '+(heading?.textContent.trim()||'fuentes del viaje')+' · enlace '+(index+1));
   });
   const review=document.getElementById('actualizacion');
+  [...review.querySelectorAll('details')].find(detail=>detail.querySelector('summary')?.textContent.includes('30, 14, 7 y 2 días'))?.classList.add('prep-timeline');
   review.querySelectorAll('details').forEach(d=>d.open=false);
   const reviewGrid=review.querySelector('.prep-grid');
   const reviewArticles=[...reviewGrid.querySelectorAll('article')];
