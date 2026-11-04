@@ -92,4 +92,62 @@
     const heading=context?.querySelector('h3,h4,.period,strong');
     link.setAttribute('aria-label',link.textContent.trim()+': '+(heading?.textContent.trim()||'fuentes del viaje')+' · enlace '+(index+1));
   });
+  const review=document.getElementById('actualizacion');
+  review.querySelectorAll('details').forEach(d=>d.open=false);
+  const reviewGrid=review.querySelector('.prep-grid');
+  const reviewArticles=[...reviewGrid.querySelectorAll('article')];
+  reviewArticles.forEach(article=>{
+    const detail=document.createElement('details');detail.className='review-decision';
+    const summary=document.createElement('summary');summary.append(article.querySelector('h3'));detail.append(summary);
+    while(article.firstChild)detail.append(article.firstChild);article.replaceWith(detail);
+  });
+  const family=reviewGrid.children[1];
+  reviewGrid.after(family);
+  const calendar=[...review.querySelectorAll('details')].find(d=>d.querySelector('summary')?.textContent==='Calendario de compra y ventanas de entradas');
+  calendar.classList.add('review-decision');reviewGrid.append(calendar);
+  document.querySelectorAll('.table-scroll').forEach(n=>{n.tabIndex=0;n.setAttribute('role','region');n.setAttribute('aria-label','Tabla de '+(n.closest('details')?.querySelector('summary')?.textContent||'planificación'));});
+  document.querySelectorAll('.hotel-card').forEach(card=>{
+    const body=card.querySelector('.hotel-body');
+    const evidence=body.querySelector('.evidence');
+    const quality=document.createElement('details');quality.className='hotel-quality';
+    quality.append(ui('summary','','Calidad de los datos'));evidence.before(quality);quality.append(evidence);
+    const coverage=evidence.textContent.match(/cobertura\s+(\d+)%/i);
+    if(coverage){const meter=ui('meter','');meter.min=0;meter.max=100;meter.value=Number(coverage[1]);meter.setAttribute('aria-label',evidence.textContent);quality.querySelector('summary').append(meter);}
+    const paragraphs=[...body.querySelectorAll(':scope>p')];
+    const description=paragraphs.find(p=>p.hasAttribute('style'));
+    if(description){const more=document.createElement('details');more.className='hotel-description';more.append(ui('summary','','Sobre este alojamiento'));description.before(more);more.append(description);}
+  });
+  const budget=document.getElementById('presupuesto');
+  let previous='';
+  budget.querySelectorAll('.budget-options tbody tr').forEach(row=>{
+    if(row.dataset.category!==previous){
+      const group=ui('tr','budget-group');const cell=ui('td','',row.dataset.category);cell.colSpan=3;group.append(cell);row.before(group);previous=row.dataset.category;
+    }
+    const note=row.querySelector('.option-note');const source=row.querySelector('a.source');
+    const detail=document.createElement('details');detail.className='option-evidence';detail.append(ui('summary','','Evidencia y condiciones'));note.before(detail);detail.append(note,source);
+    const select=row.querySelector('.people');
+    const stepper=document.createElement('div');stepper.className='people-stepper';select.before(stepper);
+    const minus=ui('button','step-minus','−'),plus=ui('button','step-plus','+');minus.type=plus.type='button';
+    minus.setAttribute('aria-label','Disminuir personas: '+row.dataset.name);plus.setAttribute('aria-label','Aumentar personas: '+row.dataset.name);
+    stepper.append(minus,select,plus);
+    function sync(){minus.disabled=select.disabled||select.value==='1';plus.disabled=select.disabled||select.value==='2';}
+    [minus,plus].forEach((button,index)=>button.addEventListener('click',()=>{select.value=String(Number(select.value)+(index?1:-1));select.dispatchEvent(new Event('input',{bubbles:true}));sync();}));
+    new MutationObserver(sync).observe(select,{attributes:true,attributeFilter:['disabled']});
+    budget.addEventListener('input',sync);document.getElementById('reset-budget').addEventListener('click',sync);sync();
+  });
+  const fixedBudget=budget.querySelector('.mobile-budget');
+  new IntersectionObserver(entries=>entries.forEach(entry=>fixedBudget.classList.toggle('is-visible',entry.isIntersecting)),{threshold:0}).observe(budget);
+  const prep=document.getElementById('preparativos');
+  prep.querySelectorAll('.prep-grid article').forEach(article=>{
+    const heading=article.querySelector('h3');const label=document.createElement('label');label.className='prep-check';
+    const checkbox=ui('input','');checkbox.type='checkbox';checkbox.setAttribute('aria-label','Marcar como revisado: '+heading.textContent);
+    heading.before(label);label.append(checkbox,heading);
+  });
+  const sourceWrap=document.querySelector('#fuentes>.wrap');const sources=sourceWrap.querySelector(':scope>details');
+  const credit=sources.querySelector('details');const licenses=credit.nextElementSibling?.nextElementSibling;
+  if(credit)sourceWrap.append(credit);
+  if(licenses?.tagName==='DETAILS')sourceWrap.append(licenses);
+  document.querySelectorAll('.sources-grid h4').forEach(heading=>{
+    const replacement=document.createElement('h3');replacement.textContent=heading.textContent;heading.replaceWith(replacement);
+  });
 })();
