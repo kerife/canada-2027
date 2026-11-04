@@ -1,0 +1,29 @@
+{
+  "name": "canada-2027-editorial",
+  "version": "1.0.0",
+  "description": "Itinerario visual de Quebec, Ottawa, Mont-Tremblant y Montreal para febrero de 2027: recorridos por día, transportes, fotografías de lugares, propuestas gastronómicas y presupuesto interactivo en MXN/CAD.",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node scripts/verify.mjs",
+    "shots": "node scripts/shots.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kerife/canada-2027.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "UNLICENSED",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/kerife/canada-2027/issues"
+  },
+  "homepage": "https://github.com/kerife/canada-2027#readme",
+  "devDependencies": {
+    "@axe-core/playwright": "^4.14.0",
+    "@playwright/cli": "^0.1.23",
+    "lighthouse": "^13.6.0",
+    "playwright": "^1.65.0-alpha-2026-10-30"
+  },
+  "private": true
+}

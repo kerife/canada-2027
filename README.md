@@ -38,3 +38,17 @@ Ver [CREDITS.md](CREDITS.md). Las imágenes de terceros conservan sus derechos; 
 La propuesta contempla cuatro noches en Quebec, dos en Ottawa y seis en Montreal. La excursión de esquí desde el hotel de Montreal a Tremblant queda para el martes 23, con Mont Royal/Mile End/Plateau el sábado 20, con regreso al mismo hotel, el aniversario se conserva el 22 y Biodôme el 24. El presupuesto comienza como total parcial mientras falten hoteles, traslados o experiencias seleccionadas. North Adventures es candidato, pero su ficha asigna Sutton a principiantes: Tremblant aún requiere confirmación. Alternativa: transporte privado más escuela oficial. Las cotizaciones antiguas de Montreal no aplican. Introducir importes no equivale a reservar.
 
 Concord Tours se añade como opción turística para revisar: visita a Tremblant sin clases ni equipo. Esquiar sigue siendo una prioridad, con fecha, transporte y coste por resolver. La referencia histórica de precio se retiró de la propuesta activa porque no acredita una tarifa de invierno de 2027. El sábado 20 lleva una nota sobre el contexto regional de Family Day y el receso de NYC; la demanda mayor es una inferencia, no ocupación comprobada.
+
+
+## Revisar el rediseño editorial
+
+La rama `redesign/invierno-editorial` conserva el contenido público y separa la presentación en `src/editorial.css` y `src/editorial.js`. `src/page.html` es la plantilla autocontenida con fotografías y fuentes ya publicadas. No se incorpora el expediente de investigación.
+
+- Abrir `index.html` directamente, incluso sin conexión.
+- Compilar: `npm ci` y `npm run build` (Node 22 o posterior).
+- Servir: `python3 -m http.server 8874 --bind 127.0.0.1`.
+- Probar: `npm test`; otro puerto se indica con `SITE_URL`. Playwright requiere Chromium: `npx playwright install chromium`.
+- Capturas y PDF: `npm run shots`; antes/después y resultados en `baseline/` y `docs/design/after/`.
+- Revisar `DESIGN.md`, `docs/design/RESULTS.md` y `docs/design/CONTENT_FLAGS.md`. No se modificaron las observaciones de contenido.
+
+La etiqueta `pre-redesign` marca el punto original. Esta rama queda para PR en borrador; publicar requiere integrar posteriormente en main.

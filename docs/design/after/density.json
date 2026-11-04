@@ -1,0 +1,44 @@
+[
+  {
+    "name": "baseline",
+    "width": 390,
+    "list": 25560,
+    "expanded": 50749,
+    "reductionPercent": 50
+  },
+  {
+    "name": "after",
+    "width": 390,
+    "list": 37174,
+    "expanded": 63767,
+    "reductionPercent": 42
+  },
+  {
+    "name": "baseline",
+    "width": 768,
+    "list": 19089,
+    "expanded": 22013,
+    "reductionPercent": 13
+  },
+  {
+    "name": "after",
+    "width": 768,
+    "list": 25735,
+    "expanded": 44576,
+    "reductionPercent": 42
+  },
+  {
+    "name": "baseline",
+    "width": 1440,
+    "list": 13318,
+    "expanded": 20448,
+    "reductionPercent": 35
+  },
+  {
+    "name": "after",
+    "width": 1440,
+    "list": 18985,
+    "expanded": 40596,
+    "reductionPercent": 53
+  }
+]
