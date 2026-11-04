@@ -6,7 +6,7 @@ for(const [width,height] of [[390,844],[768,1024],[1440,900]]){
   await page.screenshot({path:`${out}/hero-${width}.png`});
   await page.screenshot({path:`${out}/full-${width}.png`,fullPage:true});
   for(const id of ['actualizacion','recorrido','aniversario','hoteles','presupuesto','preparativos']){
-   await page.locator('#'+id).scrollIntoViewIfNeeded();
+   await page.locator('#'+id).evaluate(n=>window.scrollTo(0,n.getBoundingClientRect().top+scrollY-90));
    await page.screenshot({path:`${out}/${id}-${width}.png`});
   }
   if(width===390){await page.locator('[data-itinerary-view=list]').click();await page.locator('#day-22').scrollIntoViewIfNeeded();await page.screenshot({path:`${out}/lista-390.png`});}

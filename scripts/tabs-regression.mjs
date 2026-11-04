@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import {open,save} from './common.mjs';
 const {browser,page}=await open();
 try{
+ assert.equal(await page.evaluate(()=>scrollY),0,'La página debe abrir en la portada');
  const tabs=page.getByRole('tab');assert.equal(await tabs.count(),13);
  for(let i=0;i<13;i++){
   await tabs.nth(i).click();assert.equal(await tabs.nth(i).getAttribute('aria-selected'),'true');assert.ok(await page.locator(`#day-${i+13}`).isVisible());

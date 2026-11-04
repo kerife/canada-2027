@@ -5,24 +5,14 @@
     const node=document.createElement(tag);node.className=className;node.dataset.editorialUi='';
     if(text)node.textContent=text;return node;
   };
-  const hero=document.querySelector('.hero-copy');
-  const paragraphs=hero.querySelectorAll(':scope>p');
-  const brand=ui('p','hero-brand','Kevin & Ariadna');
-  hero.prepend(brand);
-  const jump=ui('button','button hero-jump','Saltar al itinerario →');jump.type='button';
+  const jump=document.querySelector('.hero-jump');
   jump.addEventListener('click',()=>{document.getElementById('recorrido').scrollIntoView({block:'start'});document.getElementById('tab-13').focus({preventScroll:true});});
-  paragraphs[1].after(jump);
-  const note=document.createElement('details');note.className='hero-context';
-  note.append(ui('summary','','Nuestro viaje, en pocas palabras'));
-  [paragraphs[2],hero.querySelector('.hero-actions'),paragraphs[3]].forEach(n=>note.append(n));
-  hero.append(note);
   const nav=document.querySelector('.topbar nav');
   const sectionLinks=[...nav.querySelectorAll('a')];
   const sections=sectionLinks.map(a=>document.querySelector(a.getAttribute('href')));
-  const observer=new IntersectionObserver(entries=>{
-    entries.forEach(entry=>{if(entry.isIntersecting)sectionLinks.forEach(a=>{
-      if(a.hash==='#'+entry.target.id)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current');
-    });});
+  const observer=new IntersectionObserver(()=>{
+    const current=sections.filter(section=>{const r=section.getBoundingClientRect();return r.top<innerHeight*.5&&r.bottom>72;}).at(-1);
+    sectionLinks.forEach(a=>{if(current&&a.hash==='#'+current.id)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current');});
   },{rootMargin:'-15% 0px -55% 0px'});
   sections.forEach(s=>observer.observe(s));
   const itinerary=document.getElementById('recorrido');
@@ -42,7 +32,7 @@
     else if(active.offsetLeft+active.offsetWidth>strip.scrollLeft+strip.clientWidth)strip.scrollLeft=active.offsetLeft+active.offsetWidth-strip.clientWidth;
   }
   tabs.forEach(tab=>{
-    tab.setAttribute('aria-label',tab.textContent.replace(/\s+/g,' ').trim()+' · febrero');
+    tab.removeAttribute('aria-label');
     new MutationObserver(updatePosition).observe(tab,{attributes:true,attributeFilter:['aria-selected']});
   });
   updatePosition();
@@ -59,8 +49,10 @@
     const meta=practical.querySelector('.activity-meta');const status=practical.querySelector('.evidence');
     story.before(meta,status);
   });
-  let openedForList=[];
+  let openedForList=[];let previousView='day';
   document.querySelectorAll('[data-itinerary-view]').forEach(button=>button.addEventListener('click',()=>{
+    if(previousView===button.dataset.itineraryView)return;
+    previousView=button.dataset.itineraryView;
     if(button.dataset.itineraryView==='list'){
       openedForList=[...document.querySelectorAll('.place-story')].filter(n=>!n.open);openedForList.forEach(n=>n.open=true);
     }else{openedForList.forEach(n=>n.open=false);openedForList=[];}
@@ -150,4 +142,25 @@
   document.querySelectorAll('.sources-grid h4').forEach(heading=>{
     const replacement=document.createElement('h3');replacement.textContent=heading.textContent;heading.replaceWith(replacement);
   });
+  document.querySelector('.font-licenses').tabIndex=0;
+  const reserveHint=ui('span','reserve-hint','Por persona · reserva del 10% incluida en los importes conocidos');fixedBudget.firstElementChild.append(reserveHint);
+  const daily=document.getElementById('daily-costs');const chart=ui('div','daily-chart');daily.closest('table').after(chart);
+  function drawChart(){
+    const rows=[...daily.rows];
+    if(rows.some(row=>row.cells[1].textContent.includes('parcial'))){chart.replaceChildren(ui('p','fine','La gráfica aparecerá cuando todos los días tengan importe. Consulta los pendientes en la tabla.'));return;}
+    const values=rows.map(row=>Number(row.cells[1].textContent.replace(/[^\d.-]/g,'')));
+    const max=Math.max(3000,...values);const ns='http://www.w3.org/2000/svg';const svg=document.createElementNS(ns,'svg');
+    svg.setAttribute('viewBox','0 0 680 200');svg.setAttribute('role','img');svg.setAttribute('aria-label','Gasto por día en MXN por persona. Cifras y justificaciones completas en la tabla anterior.');
+    values.forEach((value,index)=>{
+      const bar=document.createElementNS(ns,'rect');const height=value/max*160;
+      Object.entries({x:12+index*51,y:170-height,width:34,height,fill:value>3000?'var(--accent)':'var(--ink)'}).forEach(([k,v])=>bar.setAttribute(k,v));
+      const title=document.createElementNS(ns,'title');title.textContent=rows[index].cells[0].textContent+' · '+rows[index].cells[1].textContent;bar.append(title);svg.append(bar);
+      const label=document.createElementNS(ns,'text');label.setAttribute('x',29+index*51);label.setAttribute('y','193');label.setAttribute('text-anchor','middle');label.textContent=String(index+13);svg.append(label);
+    });
+    const line=document.createElementNS(ns,'path');line.setAttribute('d',`M 8 ${170-3000/max*160} H 675`);line.setAttribute('stroke','var(--ink-muted)');line.setAttribute('stroke-dasharray','4 4');svg.append(line);
+    chart.replaceChildren(ui('p','fine','Gasto por día · línea de referencia flexible: $3,000 MXN por persona'),svg);
+  }
+  new MutationObserver(drawChart).observe(daily,{childList:true});drawChart();
+  const reveal=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('is-entered');reveal.unobserve(entry.target);}}),{threshold:.1});
+  document.querySelectorAll('.activity-card').forEach(card=>reveal.observe(card));
 })();
