@@ -79,4 +79,10 @@
     opening.className=closing.className='visually-hidden';opening.textContent='[';closing.textContent=']';
     label.className='state-badge__label';label.textContent=text.slice(1,-1);badge.replaceChildren(opening,label,closing);
   });
+  document.querySelectorAll('.hotel-card>.note-visual').forEach(panel=>{
+    const copy=document.createElement('div');copy.className='hotel-placeholder-copy';
+    while(panel.firstChild)copy.append(panel.firstChild);
+    const icon=document.createElementNS('http://www.w3.org/2000/svg','svg');icon.setAttribute('viewBox','0 0 24 24');icon.setAttribute('aria-hidden','true');icon.setAttribute('focusable','false');icon.classList.add('hotel-bed-icon');
+    icon.innerHTML='<path d="M3 18V6m18 12v-7H3m0 4h18M7 11V7h5v4m0-4h5v4"/>';panel.append(icon,copy);
+  });
 })();

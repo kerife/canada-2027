@@ -13,6 +13,8 @@
   --hotel-heading-height:calc(var(--text-title) * 2.4);
   --caption-font:12px;
   --caption-line:18px;
+  --hotel-media-height:200px;
+  --hotel-icon-size:32px;
 }
 body { font-size:var(--text-body); }
 #inicio p,#inicio li,#inicio dd,#inicio label { font-size:var(--text-small);line-height:1.75; }
@@ -102,6 +104,14 @@ body input[type=checkbox] { min-height:var(--tap);height:var(--tap);width:var(--
 #inicio .hotel-body .pending-price { font:600 var(--text-section)/1.5 var(--sans);color:var(--ink); }
 #inicio .state-badge[data-states~=pending] { background:var(--bg);color:var(--ink);border:1px solid var(--line); }
 #inicio .hotel-card>.note-visual { color:var(--ink); }
+#inicio .hotel-card { display:block; }
+#inicio .hotel-card>figure.photo { height:var(--hotel-media-height);min-height:var(--hotel-media-height); }
+#inicio .hotel-card>figure.photo>img { width:100%;height:calc(var(--hotel-media-height) - var(--tap));aspect-ratio:auto;object-fit:cover; }
+#inicio .hotel-card>.note-visual { height:var(--hotel-media-height);min-height:var(--hotel-media-height);padding:var(--space-4);display:flex;flex-direction:row;align-items:center;justify-content:center;gap:var(--space-4); }
+#inicio .hotel-bed-icon { width:var(--hotel-icon-size);height:var(--hotel-icon-size);flex:none;fill:none;stroke:var(--ink-muted);stroke-width:1.5; }
+#inicio .hotel-placeholder-copy { max-width:320px;min-width:0;text-align:center;font-family:var(--sans); }
+#inicio .hotel-placeholder-copy>span { display:block;font-size:var(--text-label);line-height:1.5;letter-spacing:.06em;text-transform:uppercase; }
+#inicio .hotel-placeholder-copy>p { margin:var(--space-2) 0 0;font:400 var(--text-body)/1.5 var(--sans); }
 #inicio .hotel-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
 #inicio .hotel-card:last-child:nth-child(odd) { grid-column:1 / -1; }
 #inicio .hotel-body h3 { height:var(--hotel-heading-height);font-size:var(--text-title);line-height:1.2; }
