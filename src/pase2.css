@@ -1,0 +1,44 @@
+/* Pase 2: only the nine requested corrections. Existing display type retained. */
+:root {
+  --text-label:13px;
+  --text-meta:13px;
+  --text-small:14px;
+  --text-body:16px;
+  --text-section:20px;
+  --text-title:28px;
+  --text-figure:40px;
+}
+body { font-size:var(--text-body); }
+#inicio p,#inicio li,#inicio dd,#inicio label { font-size:var(--text-small);line-height:1.75; }
+#inicio :is(.fine,.evidence,.option-note,.original-price,.slot-duration,.budget-explanation,.place-highlights,.activity-meta,.mobile-reason,.calendar-note p) { font-size:var(--text-meta);line-height:1.65; }
+#inicio .source,#inicio .story-sources .source,#inicio .hotel-body .source { font-size:var(--text-meta)!important; }
+#inicio a:not(.button) { font-size:var(--text-meta); }
+input,select { font-size:var(--text-small); }
+#inicio .daily-chart text { font-size:var(--text-meta); }
+#inicio :is(.eyebrow,.period,.index,.calendar-marker) { font-size:var(--text-label);letter-spacing:.08em;line-height:1.6; }
+#inicio .state-badge { font-size:var(--text-meta);line-height:1.8; }
+#inicio .activity-meta dt,#inicio .activity-meta dd { font-size:var(--text-meta); }
+#inicio .date-tabs button span { font-size:var(--text-label); }
+#inicio .route-position,#inicio .view-toolbar>.fine,#inicio .view-switch button { font-size:var(--text-meta); }
+#inicio summary,#inicio .photo-credit,#inicio .photo-credit summary,#inicio .photo-credit .credit-text { font-size:var(--text-meta);line-height:1.65; }
+#inicio .tripline span,#inicio .note-visual>span,#inicio .hotel-body .eyebrow { font-size:var(--text-label); }
+#inicio :is(.budget-options,.daily-table,.base-row,.people-stepper select) { font-size:var(--text-meta); }
+#inicio .budget-group td,#inicio .budget-options td::before { font-size:var(--text-label); }
+#inicio .mobile-budget :is(span,strong,a) { font-size:var(--text-meta); }
+#inicio .calendar-note>strong,#inicio .transport>strong { font-size:var(--text-label); }
+#inicio .hero-copy>p:not(.hero-brand):not(.eyebrow) { font-size:var(--text-body); }
+#inicio .hero-context .hero-note { font-size:var(--text-meta)!important; }
+#inicio .hero-jump { font-size:var(--text-small); }
+.topbar nav { font-size:var(--text-meta); }
+.endnote { font-size:var(--text-meta); }
+#inicio .sources-grid,#inicio .credits-list,#inicio .font-licenses { font-size:var(--text-meta); }
+@media screen and (max-width:650px) {
+  #inicio p,#inicio li,#inicio dd,#inicio label { font-size:var(--text-body); }
+  #inicio :is(.fine,.evidence,.option-note,.original-price,.slot-duration,.budget-explanation,.place-highlights,.activity-meta,.mobile-reason) { font-size:var(--text-meta); }
+  #inicio .list-view .activity-body p,#inicio .list-view .place-story .place-intro,#inicio .list-view .practical p { font-size:var(--text-body);line-height:1.65; }
+  #inicio .transport p { font-size:var(--text-body); }
+  #inicio .view-toolbar { flex-wrap:wrap;gap:8px; }
+  #inicio .route-position { margin-left:auto; }
+  #inicio .view-switch button { white-space:nowrap; }
+  .topbar .wrap { width:calc(100% - 32px); }
+}
