@@ -15,7 +15,7 @@
     old.before(row);row.append(heading);
     if(match){
       heading.textContent=text.slice(0,match.index);const time=document.createElement('time');
-      time.textContent=text.slice(match.index);const clock=time.textContent.match(/\d{1,2}:\d{2}/)[0];
+      time.textContent=text.slice(match.index).replace(/^\s*·\s*/,' ');const clock=time.textContent.match(/\d{1,2}:\d{2}/)[0];
       time.dateTime=`2027-02-${old.closest('.activity-card').dataset.day}T${clock.padStart(5,'0')}:00-05:00`;row.append(time);
     }else heading.textContent=text;
     old.remove();
@@ -46,7 +46,8 @@
     if(anchor){
       const content=document.createDocumentFragment();
       [...text.childNodes].forEach(node=>{if(node===anchor){while(node.firstChild)content.append(node.firstChild);}else content.append(node);});
-      anchor.replaceChildren(content);anchor.title=anchor.textContent.replace(/\s+/g,' ').trim();caption.replaceChildren(label,anchor);
+      const copy=document.createElement('span');copy.className='photo-credit__text';copy.append(content);
+      anchor.replaceChildren(copy);anchor.title=anchor.textContent.replace(/\s+/g,' ').trim();caption.replaceChildren(label,anchor);
     }else {caption.replaceChildren(label,...text.childNodes);}
   });
   document.querySelectorAll('#actualizacion .review-decision').forEach(detail=>{
@@ -72,4 +73,42 @@
     });
   }
   new MutationObserver(showKnownAmounts).observe(document.getElementById('exact-total'),{childList:true,subtree:true});showKnownAmounts();
+  document.querySelectorAll('.state-badge').forEach(badge=>{
+    const text=badge.textContent;if(!text.startsWith('[')||!text.endsWith(']'))return;
+    const opening=document.createElement('span'),label=document.createElement('span'),closing=document.createElement('span');
+    opening.className=closing.className='visually-hidden';opening.textContent='[';closing.textContent=']';
+    label.className='state-badge__label';label.textContent=text.slice(1,-1);badge.replaceChildren(opening,label,closing);
+  });
+  document.querySelectorAll('.hotel-card>.note-visual').forEach(panel=>{
+    const copy=document.createElement('div');copy.className='hotel-placeholder-copy';
+    while(panel.firstChild)copy.append(panel.firstChild);
+    const icon=document.createElementNS('http://www.w3.org/2000/svg','svg');icon.setAttribute('viewBox','0 0 24 24');icon.setAttribute('aria-hidden','true');icon.setAttribute('focusable','false');icon.classList.add('hotel-bed-icon');
+    icon.innerHTML='<path d="M3 18V6m18 12v-7H3m0 4h18M7 11V7h5v4m0-4h5v4"/>';panel.append(icon,copy);
+  });
+  document.querySelectorAll('.hotel-body').forEach(body=>{
+    const about=body.querySelector('.hotel-description'),quality=body.querySelector('.hotel-quality');
+    const terms=[...body.querySelectorAll(':scope>details')].find(n=>n!==about&&n!==quality);
+    const room=body.querySelector(':scope>p:not(.eyebrow):not(.fine)'),quote=body.querySelector(':scope>p.fine');
+    const detail=document.createElement('details');detail.className='hotel-details';
+    const summary=document.createElement('summary');summary.dataset.editorialUi='';summary.textContent='Ver detalles del alojamiento';detail.append(summary);about.before(detail);
+    [about,quality,terms].forEach((old,index)=>{
+      const section=document.createElement('section');section.className='hotel-subsection';const heading=document.createElement('h4');const label=old.querySelector(':scope>summary');
+      if(label.hasAttribute('data-editorial-ui'))heading.dataset.editorialUi='';
+      while(label.firstChild)heading.append(label.firstChild);label.remove();section.append(heading);
+      if(index===0&&room)section.append(room);if(index===2&&quote)section.append(quote);
+      while(old.firstChild)section.append(old.firstChild);detail.append(section);old.remove();
+    });
+    const price=body.querySelector('.price');const badge=price.nextElementSibling;
+    const line=document.createElement('div');line.className='hotel-price-line';price.before(line);line.append(price);
+    if(badge?.classList.contains('state-badge'))line.append(badge);
+  });
+  document.querySelectorAll('.hotel-card meter').forEach((meter,index)=>{
+    const group=document.createElement('div');group.className='hotel-meter';group.dataset.editorialUi='';
+    const label=document.createElement('label');meter.id='hotel-coverage-'+index;label.htmlFor=meter.id;
+    label.textContent=`Cobertura de datos · ${meter.value}%`;
+    meter.setAttribute('aria-label','Cobertura de datos · '+meter.closest('.hotel-card').querySelector('h3').textContent);
+    meter.setAttribute('aria-valuemin',String(meter.min));meter.setAttribute('aria-valuemax',String(meter.max));meter.setAttribute('aria-valuenow',String(meter.value));
+    meter.setAttribute('aria-valuetext',`${meter.value}% de cobertura de datos`);
+    const heading=meter.closest('.hotel-subsection').querySelector('h4');heading.after(group);group.append(label,meter);
+  });
 })();

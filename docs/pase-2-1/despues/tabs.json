@@ -1,0 +1,18 @@
+[
+  {
+    "surface": "publicado",
+    "days": 13,
+    "click": true,
+    "arrows": true,
+    "homeEnd": true,
+    "views": 2
+  },
+  {
+    "surface": "cierre",
+    "days": 13,
+    "click": true,
+    "arrows": true,
+    "homeEnd": true,
+    "views": 2
+  }
+]

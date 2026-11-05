@@ -1,0 +1,51 @@
+[
+  {
+    "label": "Cobertura de datos · 45%",
+    "value": 45,
+    "min": "0",
+    "max": "100",
+    "aria": "Cobertura de datos · Aux Deux Lions"
+  },
+  {
+    "label": "Cobertura de datos · 0%",
+    "value": 0,
+    "min": "0",
+    "max": "100",
+    "aria": "Cobertura de datos · Le Concorde"
+  },
+  {
+    "label": "Cobertura de datos · 20%",
+    "value": 20,
+    "min": "0",
+    "max": "100",
+    "aria": "Cobertura de datos · ByWard Blue Inn"
+  },
+  {
+    "label": "Cobertura de datos · 10%",
+    "value": 10,
+    "min": "0",
+    "max": "100",
+    "aria": "Cobertura de datos · The Business Inn"
+  },
+  {
+    "label": "Cobertura de datos · 20%",
+    "value": 20,
+    "min": "0",
+    "max": "100",
+    "aria": "Cobertura de datos · Fairfield by Marriott Montreal Downtown"
+  },
+  {
+    "label": "Cobertura de datos · 0%",
+    "value": 0,
+    "min": "0",
+    "max": "100",
+    "aria": "Cobertura de datos · Hyatt Centric Montréal"
+  },
+  {
+    "label": "Cobertura de datos · 0%",
+    "value": 0,
+    "min": "0",
+    "max": "100",
+    "aria": "Cobertura de datos · Hôtel Monville"
+  }
+]
