@@ -647,6 +647,9 @@ summary:focus-visible,a:focus-visible,button:focus-visible { outline-offset:3px;
   --text-section:20px;
   --text-title:28px;
   --text-figure:40px;
+  --tap:44px;
+  --tap-gap:8px;
+  --nav-height:72px;
 }
 body { font-size:var(--text-body); }
 #inicio p,#inicio li,#inicio dd,#inicio label { font-size:var(--text-small);line-height:1.75; }
@@ -671,8 +674,24 @@ input,select { font-size:var(--text-small); }
 #inicio .hero-jump { font-size:var(--text-small); }
 .topbar nav { font-size:var(--text-meta); }
 .endnote { font-size:var(--text-meta); }
+body a,body button,body select,body summary { min-height:var(--tap); }
+body a { display:inline-flex;align-items:center; }
+body input[type=checkbox] { min-height:var(--tap);height:var(--tap);width:var(--tap); }
+.brand { min-height:var(--tap); }
+#inicio summary { margin-block:var(--space-1); }
+#inicio .source { margin:var(--space-1) var(--tap-gap) var(--space-1) 0; }
+#inicio :is(.date-tabs,.day-controls,.view-switch,.people-stepper,.story-sources,.route-position) { gap:var(--tap-gap); }
+#inicio .people-stepper select { min-width:var(--tap); }
+#inicio .route-position button { border:0;border-bottom:2px solid transparent;background:transparent;color:var(--ink);font:inherit;padding:var(--space-2); }
+#inicio .route-position span { border:0;padding:0; }
+#inicio .route-position button:has([data-active]) { border-color:var(--accent); }
+#inicio .itinerary-dock { top:var(--nav-height); }
+#inicio .summary-card { max-height:calc(100dvh - var(--nav-height) - 120px); }
+.topbar .wrap { min-height:calc(var(--nav-height) - 1px); }
+#inicio .travel-update a,#inicio .prep-grid a { margin-right:var(--tap-gap); }
 #inicio .sources-grid,#inicio .credits-list,#inicio .font-licenses { font-size:var(--text-meta); }
 @media screen and (max-width:650px) {
+  :root { --nav-height:97px; }
   #inicio p,#inicio li,#inicio dd,#inicio label { font-size:var(--text-body); }
   #inicio :is(.fine,.evidence,.option-note,.original-price,.slot-duration,.budget-explanation,.place-highlights,.activity-meta,.mobile-reason) { font-size:var(--text-meta); }
   #inicio .list-view .activity-body p,#inicio .list-view .place-story .place-intro,#inicio .list-view .practical p { font-size:var(--text-body);line-height:1.65; }
@@ -681,6 +700,9 @@ input,select { font-size:var(--text-small); }
   #inicio .route-position { margin-left:auto; }
   #inicio .view-switch button { white-space:nowrap; }
   .topbar .wrap { width:calc(100% - 32px); }
+  #inicio .budget-options tr { grid-template-columns:minmax(0,1fr) 164px; }
+  #inicio .summary-card { max-height:none; }
+  #inicio .hero-photo .photo-credit { max-width:calc(100% - 40px)!important; }
 }
 </style>
 </head>
@@ -1291,6 +1313,14 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
 <script>/* Presentation corrections; no budget inputs or formulas are changed. */
 (() => {
   'use strict';
+  const baseDays={Quebec:13,Ottawa:17,Montreal:19};
+  document.querySelectorAll('.route-position>span').forEach(span=>{
+    const button=document.createElement('button');button.type='button';button.dataset.editorialUi='';
+    button.setAttribute('aria-label','Ir a '+span.textContent);span.before(button);button.append(span);
+    const sync=()=>button.setAttribute('aria-pressed',String(span.hasAttribute('data-active')));
+    sync();new MutationObserver(sync).observe(span,{attributes:true,attributeFilter:['data-active']});
+    button.addEventListener('click',()=>document.getElementById('tab-'+baseDays[span.dataset.city]).click());
+  });
 })();
 </script>
 </body></html>
