@@ -13,7 +13,7 @@ try{
  const story=page.locator('#day-13 .activity-card[data-slot="1"] .stop-details');
  assert.equal(await story.getAttribute('open'),null);
  await page.locator('[data-itinerary-view=list]').click();await page.locator('[data-itinerary-view=list]').click();
- assert.equal(await page.locator('.print-day:visible').count(),13);assert.equal(await page.locator('.stop-details[open]').count(),39);
+ assert.equal(await page.locator('.print-day:visible').count(),13);assert.equal(await page.locator('.stop-details[open]').count(),0);
  await page.locator('[data-itinerary-view=day]').click();assert.equal(await story.getAttribute('open'),null);
  assert.equal(await page.locator('#budget-summary').textContent(),before);
  const food=page.locator('tr[data-id=foodextra]');await food.locator('.option-check').check();

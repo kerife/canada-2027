@@ -53,14 +53,6 @@
     const meta=practical.querySelector('.activity-meta');const status=practical.querySelector('.evidence');
     story.before(meta,status);
   });
-  let openedForList=[];let previousView='day';
-  document.querySelectorAll('[data-itinerary-view]').forEach(button=>button.addEventListener('click',()=>{
-    if(previousView===button.dataset.itineraryView)return;
-    previousView=button.dataset.itineraryView;
-    if(button.dataset.itineraryView==='list'){
-      openedForList=[...document.querySelectorAll('.place-story')].filter(n=>!n.open);openedForList.forEach(n=>n.open=true);
-    }else{openedForList.forEach(n=>n.open=false);openedForList=[];}
-  }));
   // Wrap exact evidence strings. Icons are CSS so textContent stays identical.
   const walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{acceptNode(node){
     return node.parentElement.closest('script,style,[data-editorial-ui],.state-badge')?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT;
@@ -133,7 +125,6 @@
     budget.addEventListener('input',sync);document.getElementById('reset-budget').addEventListener('click',sync);sync();
   });
   const fixedBudget=budget.querySelector('.mobile-budget');
-  new IntersectionObserver(entries=>entries.forEach(entry=>fixedBudget.classList.toggle('is-visible',entry.isIntersecting)),{threshold:0}).observe(budget);
   const prep=document.getElementById('preparativos');
   prep.querySelectorAll('.prep-grid article').forEach(article=>{
     const heading=article.querySelector('h3');const label=document.createElement('label');label.className='prep-check';

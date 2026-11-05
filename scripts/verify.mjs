@@ -1,7 +1,7 @@
 import {spawnSync} from 'node:child_process';
 import {stat,readFile} from 'node:fs/promises';
 import assert from 'node:assert/strict';
-for(const script of ['build','parity-check','calc-regression','tabs-regression','ui-regression','navigation-regression','a11y','network-audit']){
+for(const script of ['build','parity-check','editorial-clean-content','calc-regression','tabs-regression','ui-regression','navigation-regression','editorial-clean-regression','editorial-clean-layout','a11y','network-audit']){
  const result=spawnSync(process.execPath,[`scripts/${script}.mjs`],{stdio:'inherit'});
  if(result.status!==0)process.exit(result.status||1);
 }

@@ -1,0 +1,48 @@
+import assert from 'node:assert/strict';
+import {open,save} from './common.mjs';
+const {page,browser,errors}=await open(390,844);
+try {
+ assert.equal(await page.locator('.stop-details[open]').count(),0,'Paradas cerradas al iniciar');
+ assert.doesNotMatch(await page.locator('#day-23 .stop-logistics').allTextContents().then(ns=>ns.join(' ')),/\[(Estimado|Pendiente|Confirmado|Propuesto|Sujeto)/,'Extractos sin corchetes visibles');
+ await page.locator('.topbar a[href="#recorrido"]').click();
+ const entry=await page.locator('#day-13 .stop-heading').first().boundingBox();
+ assert.ok(entry.y>=0&&entry.y+entry.height<844,'Primera actividad visible al entrar');
+ const info=page.getByText('Información del itinerario',{exact:true});assert.ok(await info.isVisible());
+ assert.equal(await info.locator('..').getAttribute('open'),null);
+ assert.ok(await page.locator('.itinerary-info').evaluate(n=>n.contains(document.getElementById('actualizacion'))),'La revisión también queda bajo demanda');
+ await page.locator('#day-13 .activity-card').nth(2).scrollIntoViewIfNeeded();
+ await page.locator('[data-itinerary-view=list]').click();
+ assert.ok((await page.locator('#day-title-13').boundingBox()).y>0,'Cambiar con dock fijo vuelve al comienzo real');
+ await page.locator('[data-itinerary-view=day]').click();
+ const first=page.locator('#day-13 .stop-details').first();
+ await first.locator(':scope>summary').click();
+ await page.locator('[data-itinerary-view=list]').click();
+ assert.equal(await page.locator('.stop-details[open]').count(),0,'Lista inicialmente cerrada');
+ const titles=await page.locator('#day-13 .stop-heading').evaluateAll(ns=>ns.map(n=>n.getBoundingClientRect()).filter(r=>r.top>=0&&r.bottom<=innerHeight).length);
+ assert.ok(titles>=2,'Dos actividades reconocibles al entrar a lista móvil');
+ const second=page.locator('#day-13 .stop-details').nth(1);await second.locator(':scope>summary').click();
+ await page.locator('[data-itinerary-view=day]').click();assert.equal(await first.getAttribute('open'),'');assert.equal(await second.getAttribute('open'),null);
+ await page.locator('[data-itinerary-view=list]').click();assert.equal(await first.getAttribute('open'),null);assert.equal(await second.getAttribute('open'),'');
+ await page.getByRole('button',{name:'Expandir todos los detalles',exact:true}).click();assert.equal(await page.locator('.stop-details[open]').count(),39);
+ await page.getByRole('button',{name:'Contraer todos',exact:true}).click();assert.equal(await page.locator('.stop-details[open]').count(),0);
+ await page.evaluate(()=>dispatchEvent(new Event('beforeprint')));assert.equal(await page.locator('details:not([open])').count(),0);
+ await page.evaluate(()=>dispatchEvent(new Event('afterprint')));assert.equal(await page.locator('.stop-details[open]').count(),0);
+ await first.evaluate(n=>{n.open=true;dispatchEvent(new Event('beforeprint'));dispatchEvent(new Event('afterprint'));});
+ assert.equal(await first.getAttribute('open'),'','Imprimir conserva cambios sin esperar toggle');
+ const summary=page.locator('#budget-summary'),bar=page.locator('.mobile-budget');
+ await summary.scrollIntoViewIfNeeded();await page.waitForTimeout(120);assert.equal(await bar.isVisible(),false,'No duplicar resumen visible');
+ await page.locator('.budget-options').scrollIntoViewIfNeeded();await page.waitForTimeout(120);assert.ok(await bar.isVisible());
+ const amount=bar.locator('.mobile-known');assert.match(await amount.textContent(),/21,632\.52/);
+ assert.ok((await bar.boundingBox()).height<=88.1);
+ for(const width of [1440,390]) {await page.setViewportSize({width,height:844});await page.locator('.budget-options').scrollIntoViewIfNeeded();await page.waitForTimeout(120);assert.equal(await bar.isVisible(),width<1024,'Visibilidad tras cambiar ancho');}
+ await page.locator('#fx').fill('14');assert.match(await amount.textContent(),/23,296\.56/);
+ await page.locator('#hotel-scenario').fill('1800.25');assert.match(await amount.textContent(),/37,851\.76/);
+ const valid=await amount.textContent();await page.locator('#fx').fill('');assert.equal(await amount.textContent(),valid,'Conservar último importe válido');
+ await page.locator('#reset-budget').click();assert.match(await amount.textContent(),/21,632\.52/);
+ await page.locator('.topbar a[href="#inicio"]').click();await page.waitForTimeout(120);assert.equal(await bar.isVisible(),false);
+ await page.emulateMedia({media:'print'});
+ assert.ok(await page.locator('.hotel-card>.note-visual').evaluateAll(ns=>ns.every(n=>n.getBoundingClientRect().width<=140.1)),'Placeholder acotado en impresión');
+ await page.emulateMedia({media:'screen'});
+ assert.deepEqual(errors,[]);await save('editorial-clean.json',{result:'PASS',dayListState:true,visibleListActivities:titles,budgetResize:[390,1440,390],errors},'docs/editorial-limpio/despues');
+ console.log('PASS entrada compacta, estados por vista, expansión, impresión y presupuesto adaptable');
+} finally {await browser.close();}
