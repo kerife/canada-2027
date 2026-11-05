@@ -75,6 +75,9 @@ body input[type=checkbox] { min-height:var(--tap);height:var(--tap);width:var(--
 #inicio .review-stop>summary h3 { display:inline; }
 #inicio .review-stop-body { margin-top:var(--space-2); }
 #inicio .review-stop-body p { max-width:85ch; }
+#inicio .hotel-body .pending-price { font:600 var(--text-section)/1.5 var(--sans);color:var(--ink); }
+#inicio .state-badge[data-states~=pending] { background:var(--bg);color:var(--ink);border:1px solid var(--line); }
+#inicio .hotel-card>.note-visual { color:var(--ink); }
 @media screen and (max-width:650px) {
   :root { --nav-height:97px; }
   #inicio p,#inicio li,#inicio dd,#inicio label { font-size:var(--text-body); }

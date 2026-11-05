@@ -52,4 +52,8 @@
     const summary=detail.querySelector(':scope>summary');const body=document.createElement('div');body.className='review-stop-body';
     while(summary.nextSibling)body.append(summary.nextSibling);detail.append(body);
   });
+  document.querySelectorAll('.hotel-body .price').forEach(price=>{
+    if(!/pendiente|por cotizar|por confirmar/i.test(price.textContent))return;
+    price.classList.add('pending-price');const badge=document.createElement('span');badge.className='state-badge';badge.dataset.states='pending';badge.dataset.editorialUi='';badge.textContent='[Pendiente de confirmar]';price.after(badge);
+  });
 })();

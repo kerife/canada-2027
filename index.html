@@ -715,6 +715,9 @@ body input[type=checkbox] { min-height:var(--tap);height:var(--tap);width:var(--
 #inicio .review-stop>summary h3 { display:inline; }
 #inicio .review-stop-body { margin-top:var(--space-2); }
 #inicio .review-stop-body p { max-width:85ch; }
+#inicio .hotel-body .pending-price { font:600 var(--text-section)/1.5 var(--sans);color:var(--ink); }
+#inicio .state-badge[data-states~=pending] { background:var(--bg);color:var(--ink);border:1px solid var(--line); }
+#inicio .hotel-card>.note-visual { color:var(--ink); }
 @media screen and (max-width:650px) {
   :root { --nav-height:97px; }
   #inicio p,#inicio li,#inicio dd,#inicio label { font-size:var(--text-body); }
@@ -1389,6 +1392,10 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
     detail.classList.add('review-stop');detail.open=true;
     const summary=detail.querySelector(':scope>summary');const body=document.createElement('div');body.className='review-stop-body';
     while(summary.nextSibling)body.append(summary.nextSibling);detail.append(body);
+  });
+  document.querySelectorAll('.hotel-body .price').forEach(price=>{
+    if(!/pendiente|por cotizar|por confirmar/i.test(price.textContent))return;
+    price.classList.add('pending-price');const badge=document.createElement('span');badge.className='state-badge';badge.dataset.states='pending';badge.dataset.editorialUi='';badge.textContent='[Pendiente de confirmar]';price.after(badge);
   });
 })();
 </script>
