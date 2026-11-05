@@ -12,7 +12,7 @@ try{
  await page.keyboard.press('Home');assert.equal(await page.evaluate(()=>document.activeElement.id),'tab-13');
  await page.keyboard.press('End');assert.equal(await page.evaluate(()=>document.activeElement.id),'tab-25');
  await page.locator('[data-itinerary-view=list]').click();assert.equal(await page.locator('.print-day:visible').count(),13);
- for(let n=13;n<=25;n++)assert.ok(await page.locator(`#day-${n} h3`).isVisible());
+ for(let n=13;n<=25;n++)assert.ok(await page.locator(`#day-title-${n}`).isVisible());
  await page.locator('[data-itinerary-view=day]').click();assert.ok(await page.locator('#day-25').isVisible());
  const widths=[];
  for(const width of [320,390,768,1024,1440]){await page.setViewportSize({width,height:900});const overflow=await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth);widths.push({width,overflow});assert.equal(overflow,false,`Desbordamiento a ${width}`);}
