@@ -15,6 +15,7 @@
   --caption-line:18px;
   --hotel-media-height:200px;
   --hotel-icon-size:32px;
+  --hotel-meter-width:240px;
 }
 body { font-size:var(--text-body); }
 #inicio p,#inicio li,#inicio dd,#inicio label { font-size:var(--text-small);line-height:1.75; }
@@ -123,6 +124,12 @@ body input[type=checkbox] { min-height:var(--tap);height:var(--tap);width:var(--
 #inicio .hotel-details>summary { padding:var(--space-2) 0; }
 #inicio .hotel-subsection { padding:0;margin:var(--space-4) 0; }
 #inicio .hotel-subsection h4 { font-size:var(--text-section);line-height:1.4;margin-bottom:var(--space-2); }
+#inicio .hotel-meter { margin:var(--space-3) 0; }
+#inicio .hotel-meter label { display:block;font-size:var(--text-meta); }
+#inicio .hotel-meter meter { display:block;width:100%;max-width:var(--hotel-meter-width);height:var(--space-4);margin-top:var(--space-2); }
+#inicio .hotel-meter meter::-webkit-meter-bar { border:1px solid var(--ink-muted);background:var(--bg); }
+#inicio .hotel-meter meter::-webkit-meter-optimum-value { background:var(--ink); }
+#inicio .hotel-meter meter::-moz-meter-bar { background:var(--ink); }
 #inicio .hotel-card:last-child:nth-child(odd) { display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr); }
 #inicio #total-person,#inicio #total-couple { font:500 var(--text-meta)/1.65 var(--sans);color:inherit; }
 #inicio .summary-amount { font:400 var(--text-figure)/1.2 var(--serif);font-variant-numeric:tabular-nums;margin:var(--space-2) 0;overflow-wrap:anywhere; }

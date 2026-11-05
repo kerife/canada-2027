@@ -102,4 +102,13 @@
     const line=document.createElement('div');line.className='hotel-price-line';price.before(line);line.append(price);
     if(badge?.classList.contains('state-badge'))line.append(badge);
   });
+  document.querySelectorAll('.hotel-card meter').forEach((meter,index)=>{
+    const group=document.createElement('div');group.className='hotel-meter';group.dataset.editorialUi='';
+    const label=document.createElement('label');meter.id='hotel-coverage-'+index;label.htmlFor=meter.id;
+    label.textContent=`Cobertura de datos · ${meter.value}%`;
+    meter.setAttribute('aria-label','Cobertura de datos · '+meter.closest('.hotel-card').querySelector('h3').textContent);
+    meter.setAttribute('aria-valuemin',String(meter.min));meter.setAttribute('aria-valuemax',String(meter.max));meter.setAttribute('aria-valuenow',String(meter.value));
+    meter.setAttribute('aria-valuetext',`${meter.value}% de cobertura de datos`);
+    const heading=meter.closest('.hotel-subsection').querySelector('h4');heading.after(group);group.append(label,meter);
+  });
 })();
