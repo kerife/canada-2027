@@ -37,7 +37,8 @@
     let anchor=text.querySelector('a');
     if(!anchor){
       const alt=caption.closest('figure').querySelector('img')?.alt;
-      const credit=[...document.querySelectorAll('.credits-list li')].find(item=>item.textContent.startsWith(alt));
+      const credits=[...document.querySelectorAll('.credits-list li')];const name=text.textContent.split(' · ')[0].trim();
+      const credit=credits.find(item=>item.textContent.startsWith(alt))||credits.find(item=>item.textContent.includes(name));
       const source=credit?.querySelector('a[href]');
       if(source){anchor=document.createElement('a');anchor.href=source.href;anchor.target='_blank';anchor.rel='noopener noreferrer';anchor.dataset.addedCredit='';}
     }
