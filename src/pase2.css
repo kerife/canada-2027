@@ -50,6 +50,10 @@ body input[type=checkbox] { min-height:var(--tap);height:var(--tap);width:var(--
 .topbar .wrap { min-height:calc(var(--nav-height) - 1px); }
 #inicio .travel-update a,#inicio .prep-grid a { margin-right:var(--tap-gap); }
 #inicio .sources-grid,#inicio .credits-list,#inicio .font-licenses { font-size:var(--text-meta); }
+#inicio .stop-heading { display:flex;flex-wrap:wrap;align-items:baseline;gap:var(--tap-gap);margin:var(--space-2) 0 var(--space-4); }
+#inicio .stop-heading h3 { font-size:var(--text-title);line-height:1.2;margin:0; }
+#inicio .stop-heading time { font:500 var(--text-meta)/1.65 var(--sans);padding:var(--space-1) var(--space-2);background:var(--state-estimated-bg);color:var(--ink);border-radius:var(--radius);white-space:nowrap; }
+#inicio .list-view .stop-heading { grid-column:1;margin:0 0 var(--space-2); }
 @media screen and (max-width:650px) {
   :root { --nav-height:97px; }
   #inicio p,#inicio li,#inicio dd,#inicio label { font-size:var(--text-body); }
