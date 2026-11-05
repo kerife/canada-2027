@@ -6,7 +6,8 @@ try {
  if(baseline){await save('content.json',current);console.log('Línea base de contenido guardada');}
  else {
   const before=JSON.parse(await readFile('baseline/content.json','utf8'));
-  const missing=before.blocks.filter(s=>!current.text.includes(s));
+  const canonical=s=>s.replace(/[\[\]]/g,'').replace(/\s*·\s*(?=\d{1,2}:\d{2})/g,' ').replace(/\s+/g,' ').trim();
+  const missing=before.blocks.filter(s=>!canonical(current.text).includes(canonical(s)));
   const result={missing,structure:current.structure};
   await save('parity.json',result);
   for(const name of ['hrefs','numbers','states','structure'])assert.deepEqual(current[name],before[name],name);

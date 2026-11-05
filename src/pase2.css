@@ -83,8 +83,8 @@ body input[type=checkbox] { min-height:var(--tap);height:var(--tap);width:var(--
 #inicio .photo-credit { position:relative!important;inset:auto;display:block;height:auto;min-height:var(--tap);max-height:none;overflow:visible;background:var(--bg)!important;color:var(--ink);font:var(--caption-font)/var(--caption-line) var(--sans); }
 #inicio .photo-credit>a { display:flex!important;align-items:center;min-height:var(--tap)!important;height:auto;line-height:var(--caption-line);padding:var(--space-1) 0;transform:none;color:var(--ink)!important;font-size:var(--caption-font)!important;white-space:normal;overflow:visible;overflow-wrap:anywhere;text-overflow:clip; }
 #inicio .photo-credit__text { display:block;min-width:0;width:100%; }
-#inicio .hero-photo { height:calc(100% - var(--tap)); }
-#inicio .hero-photo .photo-credit { position:absolute!important;inset:auto 0 calc(-1 * var(--tap));width:100%;max-width:none!important;background:var(--bg)!important;padding:0 var(--space-6)!important; }
+#inicio .hero-photo { height:calc(100% - var(--tap));overflow:visible; }
+#inicio .hero-photo .photo-credit { position:absolute!important;inset:auto 0 calc(-1 * var(--tap));width:100%;max-width:none!important;background:var(--bg)!important;padding:0 var(--space-2)!important; }
 @media screen {
   #inicio .list-view .activity-card:has(>figure.photo) { display:grid;grid-template-columns:80px minmax(0,1fr);gap:var(--space-2) var(--space-4); }
   #inicio .list-view .activity-card>figure.photo { display:contents; }
@@ -142,6 +142,9 @@ body input[type=checkbox] { min-height:var(--tap);height:var(--tap);width:var(--
   #inicio .hotel-card:last-child:nth-child(odd) { display:block; }
 }
 @media print {
+  #inicio .budget-config { grid-template-columns:minmax(0,1fr); }
+  #inicio .budget-config>label { break-inside:avoid; }
+  #inicio .budget-config input,#inicio .budget-config select { min-width:0;width:100%;font-size:10px; }
   body a,body button,body select,body summary { min-height:0; }
   body input[type=checkbox] { min-height:0;width:12px;height:12px; }
   #inicio p,#inicio li,#inicio dd,#inicio label { font-size:10px;line-height:1.6; }

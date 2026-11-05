@@ -1,0 +1,330 @@
+[
+  {
+    "width": 320,
+    "hotels": [
+      {
+        "height": 542.78125,
+        "media": 200,
+        "details": 1,
+        "sections": 3,
+        "value": 45,
+        "aria": "Cobertura de datos · Aux Deux Lions",
+        "label": "Cobertura de datos · 45%",
+        "priceVisible": true,
+        "sourceVisible": true
+      },
+      {
+        "height": 542.78125,
+        "media": 200,
+        "details": 1,
+        "sections": 3,
+        "value": 0,
+        "aria": "Cobertura de datos · Le Concorde",
+        "label": "Cobertura de datos · 0%",
+        "priceVisible": true,
+        "sourceVisible": true
+      },
+      {
+        "height": 542.78125,
+        "media": 200,
+        "details": 1,
+        "sections": 3,
+        "value": 20,
+        "aria": "Cobertura de datos · ByWard Blue Inn",
+        "label": "Cobertura de datos · 20%",
+        "priceVisible": true,
+        "sourceVisible": true
+      },
+      {
+        "height": 542.78125,
+        "media": 200,
+        "details": 1,
+        "sections": 3,
+        "value": 10,
+        "aria": "Cobertura de datos · The Business Inn",
+        "label": "Cobertura de datos · 10%",
+        "priceVisible": true,
+        "sourceVisible": true
+      },
+      {
+        "height": 542.78125,
+        "media": 200,
+        "details": 1,
+        "sections": 3,
+        "value": 20,
+        "aria": "Cobertura de datos · Fairfield by Marriott Montreal Downtown",
+        "label": "Cobertura de datos · 20%",
+        "priceVisible": true,
+        "sourceVisible": true
+      },
+      {
+        "height": 542.78125,
+        "media": 200,
+        "details": 1,
+        "sections": 3,
+        "value": 0,
+        "aria": "Cobertura de datos · Hyatt Centric Montréal",
+        "label": "Cobertura de datos · 0%",
+        "priceVisible": true,
+        "sourceVisible": true
+      },
+      {
+        "height": 542.78125,
+        "media": 200,
+        "details": 1,
+        "sections": 3,
+        "value": 0,
+        "aria": "Cobertura de datos · Hôtel Monville",
+        "label": "Cobertura de datos · 0%",
+        "priceVisible": true,
+        "sourceVisible": true
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "hotels": [
+      {
+        "height": 502.390625,
+        "media": 200,
+        "details": 1,
+        "sections": 3,
+        "value": 45,
+        "aria": "Cobertura de datos · Aux Deux Lions",
+        "label": "Cobertura de datos · 45%",
+        "priceVisible": true,
+        "sourceVisible": true
+      },
+      {
+        "height": 502.390625,
+        "media": 200,
+        "details": 1,
+        "sections": 3,
+        "value": 0,
+        "aria": "Cobertura de datos · Le Concorde",
+        "label": "Cobertura de datos · 0%",
+        "priceVisible": true,
+        "sourceVisible": true
+      },
+      {
+        "height": 502.390625,
+        "media": 200,
+        "details": 1,
+        "sections": 3,
+        "value": 20,
+        "aria": "Cobertura de datos · ByWard Blue Inn",
+        "label": "Cobertura de datos · 20%",
+        "priceVisible": true,
+        "sourceVisible": true
+      },
+      {
+        "height": 502.390625,
+        "media": 200,
+        "details": 1,
+        "sections": 3,
+        "value": 10,
+        "aria": "Cobertura de datos · The Business Inn",
+        "label": "Cobertura de datos · 10%",
+        "priceVisible": true,
+        "sourceVisible": true
+      },
+      {
+        "height": 464.390625,
+        "media": 200,
+        "details": 1,
+        "sections": 3,
+        "value": 20,
+        "aria": "Cobertura de datos · Fairfield by Marriott Montreal Downtown",
+        "label": "Cobertura de datos · 20%",
+        "priceVisible": true,
+        "sourceVisible": true
+      },
+      {
+        "height": 464.390625,
+        "media": 200,
+        "details": 1,
+        "sections": 3,
+        "value": 0,
+        "aria": "Cobertura de datos · Hyatt Centric Montréal",
+        "label": "Cobertura de datos · 0%",
+        "priceVisible": true,
+        "sourceVisible": true
+      },
+      {
+        "height": 464.390625,
+        "media": 200,
+        "details": 1,
+        "sections": 3,
+        "value": 0,
+        "aria": "Cobertura de datos · Hôtel Monville",
+        "label": "Cobertura de datos · 0%",
+        "priceVisible": true,
+        "sourceVisible": true
+      }
+    ]
+  },
+  {
+    "width": 768,
+    "hotels": [
+      {
+        "height": 464.390625,
+        "media": 200,
+        "details": 1,
+        "sections": 3,
+        "value": 45,
+        "aria": "Cobertura de datos · Aux Deux Lions",
+        "label": "Cobertura de datos · 45%",
+        "priceVisible": true,
+        "sourceVisible": true
+      },
+      {
+        "height": 464.390625,
+        "media": 200,
+        "details": 1,
+        "sections": 3,
+        "value": 0,
+        "aria": "Cobertura de datos · Le Concorde",
+        "label": "Cobertura de datos · 0%",
+        "priceVisible": true,
+        "sourceVisible": true
+      },
+      {
+        "height": 464.390625,
+        "media": 200,
+        "details": 1,
+        "sections": 3,
+        "value": 20,
+        "aria": "Cobertura de datos · ByWard Blue Inn",
+        "label": "Cobertura de datos · 20%",
+        "priceVisible": true,
+        "sourceVisible": true
+      },
+      {
+        "height": 464.390625,
+        "media": 200,
+        "details": 1,
+        "sections": 3,
+        "value": 10,
+        "aria": "Cobertura de datos · The Business Inn",
+        "label": "Cobertura de datos · 10%",
+        "priceVisible": true,
+        "sourceVisible": true
+      },
+      {
+        "height": 464.390625,
+        "media": 200,
+        "details": 1,
+        "sections": 3,
+        "value": 20,
+        "aria": "Cobertura de datos · Fairfield by Marriott Montreal Downtown",
+        "label": "Cobertura de datos · 20%",
+        "priceVisible": true,
+        "sourceVisible": true
+      },
+      {
+        "height": 464.390625,
+        "media": 200,
+        "details": 1,
+        "sections": 3,
+        "value": 0,
+        "aria": "Cobertura de datos · Hyatt Centric Montréal",
+        "label": "Cobertura de datos · 0%",
+        "priceVisible": true,
+        "sourceVisible": true
+      },
+      {
+        "height": 464.390625,
+        "media": 200,
+        "details": 1,
+        "sections": 3,
+        "value": 0,
+        "aria": "Cobertura de datos · Hôtel Monville",
+        "label": "Cobertura de datos · 0%",
+        "priceVisible": true,
+        "sourceVisible": true
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "hotels": [
+      {
+        "height": 464.390625,
+        "media": 200,
+        "details": 1,
+        "sections": 3,
+        "value": 45,
+        "aria": "Cobertura de datos · Aux Deux Lions",
+        "label": "Cobertura de datos · 45%",
+        "priceVisible": true,
+        "sourceVisible": true
+      },
+      {
+        "height": 464.390625,
+        "media": 200,
+        "details": 1,
+        "sections": 3,
+        "value": 0,
+        "aria": "Cobertura de datos · Le Concorde",
+        "label": "Cobertura de datos · 0%",
+        "priceVisible": true,
+        "sourceVisible": true
+      },
+      {
+        "height": 464.390625,
+        "media": 200,
+        "details": 1,
+        "sections": 3,
+        "value": 20,
+        "aria": "Cobertura de datos · ByWard Blue Inn",
+        "label": "Cobertura de datos · 20%",
+        "priceVisible": true,
+        "sourceVisible": true
+      },
+      {
+        "height": 464.390625,
+        "media": 200,
+        "details": 1,
+        "sections": 3,
+        "value": 10,
+        "aria": "Cobertura de datos · The Business Inn",
+        "label": "Cobertura de datos · 10%",
+        "priceVisible": true,
+        "sourceVisible": true
+      },
+      {
+        "height": 464.390625,
+        "media": 200,
+        "details": 1,
+        "sections": 3,
+        "value": 20,
+        "aria": "Cobertura de datos · Fairfield by Marriott Montreal Downtown",
+        "label": "Cobertura de datos · 20%",
+        "priceVisible": true,
+        "sourceVisible": true
+      },
+      {
+        "height": 464.390625,
+        "media": 200,
+        "details": 1,
+        "sections": 3,
+        "value": 0,
+        "aria": "Cobertura de datos · Hyatt Centric Montréal",
+        "label": "Cobertura de datos · 0%",
+        "priceVisible": true,
+        "sourceVisible": true
+      },
+      {
+        "height": 264.390625,
+        "media": 200,
+        "details": 1,
+        "sections": 3,
+        "value": 0,
+        "aria": "Cobertura de datos · Hôtel Monville",
+        "label": "Cobertura de datos · 0%",
+        "priceVisible": true,
+        "sourceVisible": true
+      }
+    ]
+  }
+]
