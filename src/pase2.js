@@ -85,4 +85,21 @@
     const icon=document.createElementNS('http://www.w3.org/2000/svg','svg');icon.setAttribute('viewBox','0 0 24 24');icon.setAttribute('aria-hidden','true');icon.setAttribute('focusable','false');icon.classList.add('hotel-bed-icon');
     icon.innerHTML='<path d="M3 18V6m18 12v-7H3m0 4h18M7 11V7h5v4m0-4h5v4"/>';panel.append(icon,copy);
   });
+  document.querySelectorAll('.hotel-body').forEach(body=>{
+    const about=body.querySelector('.hotel-description'),quality=body.querySelector('.hotel-quality');
+    const terms=[...body.querySelectorAll(':scope>details')].find(n=>n!==about&&n!==quality);
+    const room=body.querySelector(':scope>p:not(.eyebrow):not(.fine)'),quote=body.querySelector(':scope>p.fine');
+    const detail=document.createElement('details');detail.className='hotel-details';
+    const summary=document.createElement('summary');summary.dataset.editorialUi='';summary.textContent='Ver detalles del alojamiento';detail.append(summary);about.before(detail);
+    [about,quality,terms].forEach((old,index)=>{
+      const section=document.createElement('section');section.className='hotel-subsection';const heading=document.createElement('h4');const label=old.querySelector(':scope>summary');
+      if(label.hasAttribute('data-editorial-ui'))heading.dataset.editorialUi='';
+      while(label.firstChild)heading.append(label.firstChild);label.remove();section.append(heading);
+      if(index===0&&room)section.append(room);if(index===2&&quote)section.append(quote);
+      while(old.firstChild)section.append(old.firstChild);detail.append(section);old.remove();
+    });
+    const price=body.querySelector('.price');const badge=price.nextElementSibling;
+    const line=document.createElement('div');line.className='hotel-price-line';price.before(line);line.append(price);
+    if(badge?.classList.contains('state-badge'))line.append(badge);
+  });
 })();

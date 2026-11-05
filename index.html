@@ -650,7 +650,7 @@ summary:focus-visible,a:focus-visible,button:focus-visible { outline-offset:3px;
   --tap:44px;
   --tap-gap:8px;
   --nav-height:72px;
-  --hotel-heading-height:calc(var(--text-title) * 2.4);
+  --hotel-heading-height:calc(var(--text-section) * 2.4);
   --caption-font:12px;
   --caption-line:18px;
   --hotel-media-height:200px;
@@ -754,12 +754,22 @@ body input[type=checkbox] { min-height:var(--tap);height:var(--tap);width:var(--
 #inicio .hotel-placeholder-copy>p { margin:var(--space-2) 0 0;font:400 var(--text-body)/1.5 var(--sans); }
 #inicio .hotel-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
 #inicio .hotel-card:last-child:nth-child(odd) { grid-column:1 / -1; }
-#inicio .hotel-body h3 { height:var(--hotel-heading-height);font-size:var(--text-title);line-height:1.2; }
+#inicio .hotel-body { padding:var(--space-4); }
+#inicio .hotel-body>.eyebrow { margin:0 0 var(--space-1); }
+#inicio .hotel-body h3 { height:var(--hotel-heading-height);font-size:var(--text-section);line-height:1.2;margin:0 0 var(--space-2); }
+#inicio .hotel-price-line { display:flex;flex-wrap:wrap;align-items:center;gap:var(--space-2); }
+#inicio .hotel-price-line .price { margin:0; }
+#inicio .hotel-details { margin-top:var(--space-2); }
+#inicio .hotel-details>summary { padding:var(--space-2) 0; }
+#inicio .hotel-subsection { padding:0;margin:var(--space-4) 0; }
+#inicio .hotel-subsection h4 { font-size:var(--text-section);line-height:1.4;margin-bottom:var(--space-2); }
+#inicio .hotel-card:last-child:nth-child(odd) { display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr); }
 #inicio #total-person,#inicio #total-couple { font:500 var(--text-meta)/1.65 var(--sans);color:inherit; }
 #inicio .summary-amount { font:400 var(--text-figure)/1.2 var(--serif);font-variant-numeric:tabular-nums;margin:var(--space-2) 0;overflow-wrap:anywhere; }
 #inicio .summary-missing { margin-top:var(--space-2); }
 @media screen and (max-width:1199px) {
   #inicio .hotel-grid { grid-template-columns:minmax(0,1fr); }
+  #inicio .hotel-card:last-child:nth-child(odd) { display:block; }
 }
 @media print {
   body a,body button,body select,body summary { min-height:0; }
@@ -791,7 +801,7 @@ body input[type=checkbox] { min-height:var(--tap);height:var(--tap);width:var(--
   .endnote { padding:12px 0;font-size:9px; }
 }
 @media screen and (max-width:650px) {
-  :root { --nav-height:97px;--hotel-heading-height:calc(var(--text-title) * 3.6); }
+  :root { --nav-height:97px; }
   #inicio p,#inicio li,#inicio dd,#inicio label { font-size:var(--text-body); }
   #inicio :is(.fine,.evidence,.option-note,.original-price,.slot-duration,.budget-explanation,.place-highlights,.activity-meta,.mobile-reason) { font-size:var(--text-meta); }
   #inicio .list-view .activity-body p,#inicio .list-view .place-story .place-intro,#inicio .list-view .practical p { font-size:var(--text-body);line-height:1.65; }
@@ -1498,6 +1508,23 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
     while(panel.firstChild)copy.append(panel.firstChild);
     const icon=document.createElementNS('http://www.w3.org/2000/svg','svg');icon.setAttribute('viewBox','0 0 24 24');icon.setAttribute('aria-hidden','true');icon.setAttribute('focusable','false');icon.classList.add('hotel-bed-icon');
     icon.innerHTML='<path d="M3 18V6m18 12v-7H3m0 4h18M7 11V7h5v4m0-4h5v4"/>';panel.append(icon,copy);
+  });
+  document.querySelectorAll('.hotel-body').forEach(body=>{
+    const about=body.querySelector('.hotel-description'),quality=body.querySelector('.hotel-quality');
+    const terms=[...body.querySelectorAll(':scope>details')].find(n=>n!==about&&n!==quality);
+    const room=body.querySelector(':scope>p:not(.eyebrow):not(.fine)'),quote=body.querySelector(':scope>p.fine');
+    const detail=document.createElement('details');detail.className='hotel-details';
+    const summary=document.createElement('summary');summary.dataset.editorialUi='';summary.textContent='Ver detalles del alojamiento';detail.append(summary);about.before(detail);
+    [about,quality,terms].forEach((old,index)=>{
+      const section=document.createElement('section');section.className='hotel-subsection';const heading=document.createElement('h4');const label=old.querySelector(':scope>summary');
+      if(label.hasAttribute('data-editorial-ui'))heading.dataset.editorialUi='';
+      while(label.firstChild)heading.append(label.firstChild);label.remove();section.append(heading);
+      if(index===0&&room)section.append(room);if(index===2&&quote)section.append(quote);
+      while(old.firstChild)section.append(old.firstChild);detail.append(section);old.remove();
+    });
+    const price=body.querySelector('.price');const badge=price.nextElementSibling;
+    const line=document.createElement('div');line.className='hotel-price-line';price.before(line);line.append(price);
+    if(badge?.classList.contains('state-badge'))line.append(badge);
   });
 })();
 </script>
