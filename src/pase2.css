@@ -1,8 +1,8 @@
 /* Pase 2: only the nine requested corrections. Existing display type retained. */
 :root {
-  --text-label:13px;
-  --text-meta:13px;
-  --text-small:14px;
+  --text-label:14px;
+  --text-meta:15px;
+  --text-small:15px;
   --text-body:16px;
   --text-section:20px;
   --text-title:28px;
@@ -23,6 +23,7 @@ body { font-size:var(--text-body); }
 #inicio .source,#inicio .story-sources .source,#inicio .hotel-body .source { font-size:var(--text-meta)!important; }
 #inicio a:not(.button) { font-size:var(--text-meta); }
 input,select { font-size:var(--text-small); }
+#inicio input,#inicio select { font-size:var(--text-small); }
 #inicio .daily-chart text { font-size:var(--text-meta); }
 #inicio :is(.eyebrow,.period,.index,.calendar-marker) { font-size:var(--text-label);letter-spacing:.08em;line-height:1.6; }
 #inicio .state-badge { position:relative;font-size:var(--text-meta);line-height:1.8; }
@@ -39,6 +40,8 @@ input,select { font-size:var(--text-small); }
 #inicio .hero-context .hero-note { font-size:var(--text-meta)!important; }
 #inicio .hero-jump { font-size:var(--text-small); }
 .topbar nav { font-size:var(--text-meta); }
+.topbar nav { max-width:100%;min-width:0;overflow-x:auto;scrollbar-width:none;gap:var(--tap-gap)!important; }
+.topbar nav a { flex:none; }
 .endnote { font-size:var(--text-meta); }
 body a,body button,body select,body summary { min-height:var(--tap); }
 body a,body button,body select,body summary { min-width:var(--tap); }
@@ -158,6 +161,12 @@ body input[type=checkbox] { min-height:var(--tap);height:var(--tap);width:var(--
   #inicio .review-stop>summary,#inicio .review-stop>summary h3 { min-height:0;font-size:20px;padding:4px 0; }
   #inicio .hotel-body h3 { height:auto;font-size:25px; }
   #inicio .hotel-grid { display:block; }
+  #inicio .hotel-card,#inicio .hotel-card:last-child:nth-child(odd) { display:grid;grid-template-columns:140px minmax(0,1fr); }
+  #inicio .hotel-card>figure.photo { height:auto;min-height:0; }
+  #inicio .hotel-card>figure.photo>img { height:auto;aspect-ratio:3/2; }
+  #inicio .hotel-card>.note-visual { height:auto;min-height:120px;flex-direction:column;padding:12px;gap:8px; }
+  #inicio .hotel-placeholder-copy>p { font-size:10px; }
+  #inicio .hotel-placeholder-copy>span { font-size:9px; }
   #inicio .pending-price { font-size:20px; }
   #inicio .summary-card { max-height:none; }
   #inicio .summary-amount { font-size:28px; }
