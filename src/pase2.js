@@ -20,4 +20,16 @@
     }else heading.textContent=text;
     old.remove();
   });
+  document.querySelectorAll('.activity-card').forEach(card=>{
+    const story=card.querySelector('.place-story');const practical=card.querySelector('.practical');const companion=card.querySelector('.companion');
+    const detail=document.createElement('details');detail.className='place-story practical stop-details';
+    const summary=document.createElement('summary');summary.dataset.editorialUi='';summary.textContent='Ver detalles de esta parada';detail.append(summary);story.before(detail);
+    [story,practical,companion].filter(Boolean).forEach(old=>{
+      const label=old.querySelector(':scope>summary');const section=document.createElement('section');section.className='stop-subsection';
+      const heading=document.createElement('h4');if(label.hasAttribute('data-editorial-ui'))heading.dataset.editorialUi='';
+      while(label.firstChild)heading.append(label.firstChild);label.remove();section.append(heading);
+      while(old.firstChild)section.append(old.firstChild);detail.append(section);old.remove();
+    });
+    detail.open=card.dataset.slot==='0';
+  });
 })();

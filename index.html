@@ -694,6 +694,13 @@ body input[type=checkbox] { min-height:var(--tap);height:var(--tap);width:var(--
 #inicio .stop-heading h3 { font-size:var(--text-title);line-height:1.2;margin:0; }
 #inicio .stop-heading time { font:500 var(--text-meta)/1.65 var(--sans);padding:var(--space-1) var(--space-2);background:var(--state-estimated-bg);color:var(--ink);border-radius:var(--radius);white-space:nowrap; }
 #inicio .list-view .stop-heading { grid-column:1;margin:0 0 var(--space-2); }
+#inicio .stop-details { margin-top:var(--space-4); }
+#inicio .stop-details>summary { font-size:var(--text-small); }
+#inicio .stop-subsection { padding:0;margin:var(--space-4) 0;scroll-margin:0; }
+#inicio .stop-subsection+section { border-top:1px solid var(--line);padding-top:var(--space-4); }
+#inicio .stop-subsection h4 { font-size:var(--text-section);line-height:1.4;margin:0 0 var(--space-2); }
+#inicio .list-view .stop-details { grid-column:1 / -1;grid-row:auto; }
+#inicio .stop-details .companion { border:0; }
 @media screen and (max-width:650px) {
   :root { --nav-height:97px; }
   #inicio p,#inicio li,#inicio dd,#inicio label { font-size:var(--text-body); }
@@ -1335,6 +1342,18 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
       time.dateTime=`2027-02-${old.closest('.activity-card').dataset.day}T${clock.padStart(5,'0')}:00-05:00`;row.append(time);
     }else heading.textContent=text;
     old.remove();
+  });
+  document.querySelectorAll('.activity-card').forEach(card=>{
+    const story=card.querySelector('.place-story');const practical=card.querySelector('.practical');const companion=card.querySelector('.companion');
+    const detail=document.createElement('details');detail.className='place-story practical stop-details';
+    const summary=document.createElement('summary');summary.dataset.editorialUi='';summary.textContent='Ver detalles de esta parada';detail.append(summary);story.before(detail);
+    [story,practical,companion].filter(Boolean).forEach(old=>{
+      const label=old.querySelector(':scope>summary');const section=document.createElement('section');section.className='stop-subsection';
+      const heading=document.createElement('h4');if(label.hasAttribute('data-editorial-ui'))heading.dataset.editorialUi='';
+      while(label.firstChild)heading.append(label.firstChild);label.remove();section.append(heading);
+      while(old.firstChild)section.append(old.firstChild);detail.append(section);old.remove();
+    });
+    detail.open=card.dataset.slot==='0';
   });
 })();
 </script>
