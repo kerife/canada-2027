@@ -638,7 +638,7 @@ summary:focus-visible,a:focus-visible,button:focus-visible { outline-offset:3px;
   * { animation:none!important;transition:none!important; }
 }
 
-/* Pase 2: only the nine requested corrections. Existing display type retained. */
+/* Editorial presentation: shared reading scale, compact agenda and responsive summaries. */
 :root {
   --text-label:14px;
   --text-meta:15px;
@@ -650,7 +650,8 @@ summary:focus-visible,a:focus-visible,button:focus-visible { outline-offset:3px;
   --tap:44px;
   --tap-gap:8px;
   --nav-height:72px;
-  --hotel-heading-height:calc(var(--text-section) * 2.4);
+  --text-operational-title:40px;
+  --section-space:48px;
   --caption-font:12px;
   --caption-line:18px;
   --hotel-media-height:200px;
@@ -701,42 +702,98 @@ body input[type=checkbox] { min-height:var(--tap);height:var(--tap);width:var(--
 #inicio .route-position button { border:0;border-bottom:2px solid transparent;background:transparent;color:var(--ink);font:inherit;padding:var(--space-2); }
 #inicio .route-position span { border:0;padding:0; }
 #inicio .route-position button:has([data-active]) { border-color:var(--accent); }
-#inicio .itinerary-dock { top:var(--nav-height); }
-#inicio .summary-card { max-height:calc(100dvh - var(--nav-height) - 120px); }
+#inicio .itinerary-dock { top:var(--header-height,72px); }
+#inicio .summary-card { max-height:calc(100dvh - var(--header-height,72px) - 32px); }
 .topbar .wrap { min-height:calc(var(--nav-height) - 1px); }
 #inicio .travel-update a,#inicio .prep-grid a { margin-right:var(--tap-gap); }
 #inicio .sources-grid,#inicio .credits-list,#inicio .font-licenses { font-size:var(--text-meta); }
 #inicio .stop-heading { display:flex;flex-wrap:wrap;align-items:baseline;gap:var(--tap-gap);margin:var(--space-2) 0 var(--space-4); }
 #inicio .stop-heading h3 { font-size:var(--text-title);line-height:1.2;margin:0; }
 #inicio .stop-heading time { font:500 var(--text-meta)/1.65 var(--sans);padding:var(--space-1) var(--space-2);background:var(--state-estimated-bg);color:var(--ink);border-radius:var(--radius);white-space:nowrap; }
-#inicio .list-view .stop-heading { grid-column:1;margin:0 0 var(--space-2); }
-#inicio .stop-details { margin-top:var(--space-4); }
+
+#inicio .stop-details { grid-column:1 / -1;margin-top:0;border-top:1px solid var(--line);min-width:0; }
 #inicio .stop-details>summary { font-size:var(--text-small); }
 #inicio .stop-subsection { padding:0;margin:var(--space-4) 0;scroll-margin:0; }
 #inicio .stop-subsection+section { border-top:1px solid var(--line);padding-top:var(--space-4); }
 #inicio .stop-subsection h4 { font-size:var(--text-section);line-height:1.4;margin:0 0 var(--space-2); }
-#inicio .list-view .stop-details { grid-column:1 / -1;grid-row:auto; }
+
 #inicio .stop-details .companion { border:0; }
 #inicio figure.photo { aspect-ratio:auto;height:auto;overflow:visible;background:transparent; }
 #inicio :is(.hotel-card,.hotel-body,figure.photo,.photo-credit) { min-width:0; }
 #inicio figure.photo>img { display:block;height:auto; }
-#inicio .photo-credit { position:relative!important;inset:auto;display:block;height:auto;min-height:var(--tap);max-height:none;overflow:visible;background:var(--bg)!important;color:var(--ink);font:var(--caption-font)/var(--caption-line) var(--sans); }
+#inicio .photo-credit { position:relative!important;inset:auto;display:block;height:auto;min-height:var(--tap);max-height:none;overflow:visible;background:transparent!important;color:var(--ink);font:var(--caption-font)/var(--caption-line) var(--sans); }
 #inicio .photo-credit>a { display:flex!important;align-items:center;min-height:var(--tap)!important;height:auto;line-height:var(--caption-line);padding:var(--space-1) 0;transform:none;color:var(--ink)!important;font-size:var(--caption-font)!important;white-space:normal;overflow:visible;overflow-wrap:anywhere;text-overflow:clip; }
 #inicio .photo-credit__text { display:block;min-width:0;width:100%; }
-#inicio .hero-photo { height:calc(100% - var(--tap));overflow:visible; }
-#inicio .hero-photo .photo-credit { position:absolute!important;inset:auto 0 calc(-1 * var(--tap));width:100%;max-width:none!important;background:var(--bg)!important;padding:0 var(--space-2)!important; }
+#inicio .hero-photo { height:100%;overflow:hidden; }
+#inicio .hero-photo .photo-credit { position:absolute!important;inset:auto 0 0;width:100%;max-width:none!important;background:var(--ink)!important;color:var(--paper);padding:0 var(--space-4)!important; }
+#inicio .hero-photo .photo-credit>a { color:var(--paper)!important; }
 @media screen {
-  #inicio .list-view .activity-card:has(>figure.photo) { display:grid;grid-template-columns:80px minmax(0,1fr);gap:var(--space-2) var(--space-4); }
+  html { scroll-padding-top:0; }
+  #inicio section { scroll-margin-top:calc(var(--header-height,72px) + 12px); }
+  #inicio :is(#recorrido,#hoteles,#presupuesto) { padding-block:var(--section-space); }
+  #inicio :is(#recorrido,#hoteles,#presupuesto) h2 { font-size:var(--text-operational-title);line-height:1.1; }
+  #inicio #recorrido>.wrap>.section-head { display:block;margin-bottom:var(--space-4); }
+  #inicio .itinerary-dock { margin:0 0 var(--space-2);padding-block:0;background:var(--surface); }
+  #inicio .view-toolbar { padding:0;gap:var(--space-2);min-height:var(--tap); }
+  #inicio #view-help { position:absolute;width:1px;height:1px;padding:0;margin:-1px;clip-path:inset(50%);overflow:hidden; }
+  #inicio #itinerary-views { scroll-margin-top:calc(var(--header-height,72px) + 12px); }
+  #inicio .date-tabs { padding-block:var(--space-2);margin:0; }
+  #inicio .date-tabs button { padding:var(--space-1) var(--space-2); }
+  #inicio .date-tabs button b { font-size:var(--text-title); }
+  #inicio .itinerary-info { margin:0 0 var(--space-2);border-bottom:1px solid var(--line); }
+  #inicio .itinerary-info>summary { padding:var(--space-2) 0;margin:0; }
+  #inicio .itinerary-info>p { margin-bottom:var(--space-4);max-width:85ch; }
+  #inicio .itinerary-info .travel-update { padding:var(--space-6);margin-bottom:var(--space-4); }
+  #inicio .itinerary-info .travel-update>.wrap { width:100%;max-width:none; }
+  #inicio .itinerary-info .travel-update .section-head { display:block;margin-bottom:var(--space-4); }
+  #inicio #actualizacion h2 { font-size:var(--text-title); }
+  #inicio .list-actions { display:flex;gap:var(--tap-gap);margin-bottom:var(--space-2); }
+  #inicio .list-actions[hidden] { display:none; }
+  #inicio .list-actions button { background:transparent;border:1px solid var(--line);padding:var(--space-1) var(--space-2);color:var(--ink);font:500 13px/1.4 var(--sans); }
+  #inicio .day-header { display:block;margin:0;padding:var(--space-2) 0 var(--space-4);position:relative; }
+  #inicio .day-header h3 { font-size:var(--text-title);line-height:1.15;margin:var(--space-1) 0; }
+  #inicio .day-header p:not(.eyebrow) { margin-top:var(--space-2); }
+  #inicio .day-controls { position:absolute;right:0;top:0;margin:0; }
+  #inicio .day-header .eyebrow { padding-right:112px; }
+  #inicio .activity-grid { margin:0;padding-left:0;border:0; }
+  #inicio .activity-card { display:grid;grid-template-columns:minmax(0,280px) minmax(0,1fr);gap:var(--space-4) var(--space-6);margin:0;padding:var(--space-6) 0;border-top:1px solid var(--line); }
+  #inicio .activity-card::before { display:none; }
+  #inicio .activity-card>.photo,#inicio .activity-card>.note-visual { float:none;width:auto;max-width:none;margin:0;align-self:start; }
+  #inicio .activity-body { display:block;min-width:0;padding:0; }
+  #inicio .activity-body>.period { margin:0; }
+  #inicio .activity-body>.place-preview { display:block;margin:var(--space-2) 0; }
+  #inicio .stop-heading { margin:var(--space-1) 0 var(--space-2); }
+  #inicio .activity-body>.slot-duration { margin:var(--space-2) 0; }
+  #inicio .activity-meta { margin:var(--space-2) 0;padding:var(--space-2) 0; }
+  #inicio .activity-meta div { display:flex;gap:var(--space-2); }
+  #inicio .activity-meta dt,#inicio .activity-meta dd { margin:0; }
+  #inicio .activity-body>.evidence { margin:var(--space-2) 0; }
+  #inicio .stop-details>summary { margin:0;padding:var(--space-2) 0; }
+  #inicio .stop-details[open] { background:var(--bg);padding:0 var(--space-4) var(--space-4); }
+  #inicio .stop-subsection { max-width:90ch; }
+  #inicio .list-view .print-day { padding:var(--space-2) 0 var(--space-4); }
+  #inicio .list-view .day-header { padding-bottom:var(--space-2); }
+  #inicio .list-view .day-header h3 { font-size:var(--text-section); }
+  #inicio .list-view .activity-card { grid-template-columns:80px minmax(0,1fr);gap:var(--space-1) var(--space-3);padding:var(--space-3) 0; }
   #inicio .list-view .activity-card>figure.photo { display:contents; }
-  #inicio .list-view .activity-card>figure.photo>img { grid-column:1;grid-row:1 / span 2;width:80px;aspect-ratio:4/3;height:auto; }
-  #inicio .list-view .activity-card>figure.photo>.photo-credit { grid-column:1 / -1;grid-row:3; }
-  #inicio .list-view .activity-card:has(>figure.photo)>.activity-body { display:contents; }
-  #inicio .list-view .activity-card:has(>figure.photo) .activity-body>.period { grid-column:2;grid-row:1; }
-  #inicio .list-view .activity-card:has(>figure.photo) .stop-heading { grid-column:2;grid-row:2; }
-  #inicio .list-view .activity-card:has(>figure.photo) .slot-duration { grid-column:1 / -1;grid-row:4; }
-  #inicio .list-view .activity-card:has(>figure.photo) .activity-meta { grid-column:1 / -1;grid-row:5; }
-  #inicio .list-view .activity-card:has(>figure.photo) .activity-body>.evidence { grid-column:1 / -1;grid-row:6; }
-  #inicio .list-view .activity-card:has(>figure.photo) .stop-details { grid-column:1 / -1;grid-row:7; }
+  #inicio .list-view .activity-card>figure.photo>img { grid-column:1;grid-row:1 / span 3;width:80px;height:80px;aspect-ratio:1;object-fit:cover; }
+  #inicio .list-view .activity-card>figure.photo>.photo-credit { grid-column:2;grid-row:3;margin:0; }
+  #inicio .list-view .activity-card>.note-visual { grid-column:1;grid-row:1 / span 3;min-height:80px;height:80px;padding:var(--space-1); }
+  #inicio .list-view .activity-card>.note-visual>p { display:none; }
+  #inicio .list-view .activity-card>.note-visual>span { font-size:12px; }
+  #inicio .list-view .activity-card>.activity-body { display:contents; }
+  #inicio .list-view .activity-body>.period { grid-column:2;grid-row:1; }
+  #inicio .list-view .stop-heading { grid-column:2;grid-row:2;margin:0;gap:var(--space-1) var(--space-2); }
+  #inicio .list-view .stop-heading h3 { font-size:var(--text-section); }
+  #inicio .list-view .stop-heading time { padding:0;background:transparent; }
+  #inicio .list-view .activity-body>.place-preview { display:none; }
+  #inicio .list-view .slot-duration { grid-column:1 / -1;grid-row:4;margin:0; }
+  #inicio .list-view .activity-meta { grid-column:1 / -1;grid-row:5;display:flex;flex-wrap:wrap;gap:var(--space-1) var(--space-3);margin:0;padding:0;border:0; }
+  #inicio .list-view .activity-meta div+div { margin-top:0; }
+  #inicio .list-view .activity-body>.evidence { grid-column:1 / -1;grid-row:6;margin:0; }
+  #inicio .list-view .stop-logistics { grid-column:1 / -1;grid-row:7;margin:0; }
+  #inicio .list-view .stop-details { grid-column:1 / -1;grid-row:8;margin:0; }
+  #inicio .list-view .stop-details>summary { padding:var(--space-1) 0; }
 }
 #inicio .travel-update .prep-grid { display:block;margin-bottom:var(--space-6); }
 #inicio .travel-update .review-stop { display:block;position:relative;background:transparent;border:0;border-left:1px solid var(--line);padding:0 0 var(--space-6) var(--space-6);margin:0 0 var(--space-4) var(--space-2);max-width:100%; }
@@ -745,22 +802,22 @@ body input[type=checkbox] { min-height:var(--tap);height:var(--tap);width:var(--
 #inicio .review-stop>summary h3 { display:inline; }
 #inicio .review-stop-body { margin-top:var(--space-2); }
 #inicio .review-stop-body p { max-width:85ch; }
-#inicio .hotel-body .pending-price { font:600 var(--text-section)/1.5 var(--sans);color:var(--ink); }
+#inicio .hotel-body .pending-price { font:500 var(--text-meta)/1.5 var(--sans);color:var(--ink-muted); }
 #inicio .state-badge[data-states~=pending] { background:var(--bg);color:var(--ink);border:1px solid var(--line); }
-#inicio .hotel-card>.note-visual { color:var(--ink); }
-#inicio .hotel-card { display:block; }
-#inicio .hotel-card>figure.photo { height:var(--hotel-media-height);min-height:var(--hotel-media-height); }
-#inicio .hotel-card>figure.photo>img { width:100%;height:calc(var(--hotel-media-height) - var(--tap));aspect-ratio:auto;object-fit:cover; }
-#inicio .hotel-card>.note-visual { height:var(--hotel-media-height);min-height:var(--hotel-media-height);padding:var(--space-4);display:flex;flex-direction:row;align-items:center;justify-content:center;gap:var(--space-4); }
+#inicio .hotel-grid { grid-template-columns:repeat(2,minmax(0,1fr));align-items:stretch; }
+#inicio .hotel-card { display:flex;flex-direction:column;min-width:0; }
+#inicio .hotel-card:last-child:nth-child(odd) { grid-column:auto; }
+#inicio .hotel-card>figure.photo { width:100%;max-width:none;align-self:stretch;height:auto;min-height:0; }
+#inicio .hotel-card>figure.photo>img { width:100%;height:auto;aspect-ratio:3/2;object-fit:cover; }
+#inicio .hotel-card>.note-visual { position:relative;box-sizing:content-box;width:100%;max-width:none;align-self:stretch;aspect-ratio:3/2;min-height:0;padding:0 0 var(--tap);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:var(--space-4);color:var(--ink); }
 #inicio .hotel-bed-icon { width:var(--hotel-icon-size);height:var(--hotel-icon-size);flex:none;fill:none;stroke:var(--ink-muted);stroke-width:1.5; }
 #inicio .hotel-placeholder-copy { max-width:320px;min-width:0;text-align:center;font-family:var(--sans); }
 #inicio .hotel-placeholder-copy>span { display:block;font-size:var(--text-label);line-height:1.5;letter-spacing:.06em;text-transform:uppercase; }
-#inicio .hotel-placeholder-copy>p { margin:var(--space-2) 0 0;font:400 var(--text-body)/1.5 var(--sans); }
-#inicio .hotel-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
-#inicio .hotel-card:last-child:nth-child(odd) { grid-column:1 / -1; }
-#inicio .hotel-body { padding:var(--space-4); }
-#inicio .hotel-body>.eyebrow { margin:0 0 var(--space-1); }
-#inicio .hotel-body h3 { height:var(--hotel-heading-height);font-size:var(--text-section);line-height:1.2;margin:0 0 var(--space-2); }
+#inicio .hotel-placeholder-copy>p { position:absolute;bottom:0;left:0;right:0;margin:0;padding:var(--space-1) var(--space-2);min-height:var(--tap);display:flex;align-items:center;justify-content:center;background:var(--surface);font:400 13px/1.4 var(--sans); }
+#inicio .hotel-body { padding:var(--space-6); }
+#inicio .hotel-body>.eyebrow { margin:0 0 var(--space-2); }
+#inicio .hotel-body h3 { height:auto;font-size:var(--text-title);line-height:1.15;margin:0 0 var(--space-2); }
+#inicio .hotel-preview { margin:var(--space-2) 0 var(--space-4);color:var(--ink-muted); }
 #inicio .hotel-price-line { display:flex;flex-wrap:wrap;align-items:center;gap:var(--space-2); }
 #inicio .hotel-price-line .price { margin:0; }
 #inicio .hotel-details { margin-top:var(--space-2); }
@@ -773,13 +830,60 @@ body input[type=checkbox] { min-height:var(--tap);height:var(--tap);width:var(--
 #inicio .hotel-meter meter::-webkit-meter-bar { border:1px solid var(--ink-muted);background:var(--bg); }
 #inicio .hotel-meter meter::-webkit-meter-optimum-value { background:var(--ink); }
 #inicio .hotel-meter meter::-moz-meter-bar { background:var(--ink); }
-#inicio .hotel-card:last-child:nth-child(odd) { display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr); }
 #inicio #total-person,#inicio #total-couple { font:500 var(--text-meta)/1.65 var(--sans);color:inherit; }
 #inicio .summary-amount { font:400 var(--text-figure)/1.2 var(--serif);font-variant-numeric:tabular-nums;margin:var(--space-2) 0;overflow-wrap:anywhere; }
 #inicio .summary-missing { margin-top:var(--space-2); }
-@media screen and (max-width:1199px) {
+#inicio .summary-breakdown p,#inicio .summary-breakdown li { color:inherit; }
+#inicio .anniversary .photo-credit>a { color:#fff7ec!important; }
+@media screen {
+  #inicio .budget-head { margin-bottom:var(--space-6); }
+  #inicio .budget-layout { display:grid;grid-template-columns:minmax(0,1fr) 340px;align-items:start;gap:var(--space-6); }
+  #inicio .budget-layout>.summary-card { grid-column:2;grid-row:1;top:calc(var(--header-height,72px) + 16px);margin:0; }
+  #inicio .budget-layout>div { grid-column:1;grid-row:1;min-width:0; }
+  #inicio .budget-explanation-details { margin-bottom:var(--space-6); }
+  #inicio .mobile-budget { display:none; }
+  #inicio .mobile-budget.is-visible { display:none; }
+  #inicio .mobile-known-label { font-size:12px;line-height:1.4; }
+  #inicio .mobile-budget .mobile-known { display:block;font-size:20px;line-height:1.2; }
+  #inicio #mobile-pending { font-size:13px;line-height:1.4; }
+}
+@media screen and (min-width:768px) and (max-width:1023px) {
   #inicio .hotel-grid { grid-template-columns:minmax(0,1fr); }
-  #inicio .hotel-card:last-child:nth-child(odd) { display:block; }
+  #inicio .hotel-card { display:grid;grid-template-columns:240px minmax(0,1fr);align-items:start; }
+  #inicio .hotel-card>.note-visual { width:240px;aspect-ratio:3/2; }
+  #inicio .hotel-body { padding:var(--space-4); }
+}
+@media screen and (max-width:1023px) {
+  #inicio #presupuesto { padding-bottom:calc(var(--section-space) + var(--budget-bar-space,0px)); }
+  #inicio .budget-layout { display:flex;flex-direction:column; }
+  #inicio .budget-layout>.summary-card { position:static;width:100%;max-height:none;overflow:visible; }
+  #inicio .budget-layout>div { width:100%; }
+  #inicio .mobile-budget.is-visible { display:flex;align-items:center;justify-content:space-between;gap:var(--space-2);padding:8px 20px calc(8px + env(safe-area-inset-bottom)); }
+  #inicio .mobile-budget>div { min-width:0; }
+  #inicio .mobile-budget a { flex:none;font-size:14px; }
+}
+@media screen and (max-width:767px) {
+  :root { --text-operational-title:28px;--section-space:32px; }
+  #inicio .hotel-grid { grid-template-columns:minmax(0,1fr); }
+  #inicio .hotel-body { padding:var(--space-4); }
+  #inicio .hotel-body h3 { font-size:var(--text-title); }
+  #inicio .activity-card { grid-template-columns:minmax(0,1fr);gap:var(--space-3); }
+  #inicio .activity-card>.activity-body { display:contents; }
+  #inicio .activity-card>.activity-body>.period { grid-row:1; }
+  #inicio .activity-card>.activity-body>.stop-heading { grid-row:2; }
+  #inicio .activity-card>.photo,#inicio .activity-card>.note-visual { grid-row:3; }
+  #inicio .list-view .activity-card>.activity-body>.period { grid-row:1; }
+  #inicio .list-view .activity-card>.activity-body>.stop-heading { grid-row:2; }
+  #inicio .list-view .activity-card>.photo { grid-row:auto; }
+  #inicio .activity-card>.photo>img { aspect-ratio:3/2; }
+  #inicio .day-header h3 { font-size:24px; }
+  #inicio .day-header .eyebrow { padding-right:104px;font-size:12px; }
+  #inicio .route-position { display:none; }
+  #inicio .view-toolbar { margin:0; }
+  #inicio .itinerary-dock { margin-inline:0;padding-inline:0; }
+  #inicio .list-view .activity-card { grid-template-columns:64px minmax(0,1fr); }
+  #inicio .list-view .activity-card>figure.photo>img { width:64px;height:64px; }
+  #inicio .list-view .activity-meta { font-size:13px; }
 }
 @media print {
   #inicio .budget-config { grid-template-columns:minmax(0,1fr); }
@@ -807,8 +911,8 @@ body input[type=checkbox] { min-height:var(--tap);height:var(--tap);width:var(--
   #inicio .hotel-card,#inicio .hotel-card:last-child:nth-child(odd) { display:grid;grid-template-columns:140px minmax(0,1fr); }
   #inicio .hotel-card>figure.photo { height:auto;min-height:0; }
   #inicio .hotel-card>figure.photo>img { height:auto;aspect-ratio:3/2; }
-  #inicio .hotel-card>.note-visual { height:auto;min-height:120px;flex-direction:column;padding:12px;gap:8px; }
-  #inicio .hotel-placeholder-copy>p { font-size:10px; }
+  #inicio .hotel-card>.note-visual { box-sizing:border-box;aspect-ratio:auto;align-self:start;width:140px;max-width:140px;height:auto;min-height:120px;flex-direction:column;padding:12px;gap:8px; }
+  #inicio .hotel-placeholder-copy>p { position:static;min-height:0;background:transparent;font-size:10px; }
   #inicio .hotel-placeholder-copy>span { font-size:9px; }
   #inicio .pending-price { font-size:20px; }
   #inicio .summary-card { max-height:none; }
@@ -823,7 +927,7 @@ body input[type=checkbox] { min-height:var(--tap);height:var(--tap);width:var(--
   :root { --nav-height:97px; }
   #inicio p,#inicio li,#inicio dd,#inicio label { font-size:var(--text-body); }
   #inicio :is(.fine,.evidence,.option-note,.original-price,.slot-duration,.budget-explanation,.place-highlights,.activity-meta,.mobile-reason) { font-size:var(--text-meta); }
-  #inicio .list-view .activity-body p,#inicio .list-view .place-story .place-intro,#inicio .list-view .practical p { font-size:var(--text-body);line-height:1.65; }
+  #inicio .list-view .stop-subsection p { font-size:var(--text-body);line-height:1.65; }
   #inicio .transport p { font-size:var(--text-body); }
   #inicio .view-toolbar { flex-wrap:wrap;gap:8px; }
   #inicio .route-position { margin-left:auto; }
@@ -1324,14 +1428,6 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
     const meta=practical.querySelector('.activity-meta');const status=practical.querySelector('.evidence');
     story.before(meta,status);
   });
-  let openedForList=[];let previousView='day';
-  document.querySelectorAll('[data-itinerary-view]').forEach(button=>button.addEventListener('click',()=>{
-    if(previousView===button.dataset.itineraryView)return;
-    previousView=button.dataset.itineraryView;
-    if(button.dataset.itineraryView==='list'){
-      openedForList=[...document.querySelectorAll('.place-story')].filter(n=>!n.open);openedForList.forEach(n=>n.open=true);
-    }else{openedForList.forEach(n=>n.open=false);openedForList=[];}
-  }));
   // Wrap exact evidence strings. Icons are CSS so textContent stays identical.
   const walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{acceptNode(node){
     return node.parentElement.closest('script,style,[data-editorial-ui],.state-badge')?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT;
@@ -1404,7 +1500,6 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
     budget.addEventListener('input',sync);document.getElementById('reset-budget').addEventListener('click',sync);sync();
   });
   const fixedBudget=budget.querySelector('.mobile-budget');
-  new IntersectionObserver(entries=>entries.forEach(entry=>fixedBudget.classList.toggle('is-visible',entry.isIntersecting)),{threshold:0}).observe(budget);
   const prep=document.getElementById('preparativos');
   prep.querySelectorAll('.prep-grid article').forEach(article=>{
     const heading=article.querySelector('h3');const label=document.createElement('label');label.className='prep-check';
@@ -1465,7 +1560,7 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
   });
   document.querySelectorAll('.activity-card').forEach(card=>{
     const story=card.querySelector('.place-story');const practical=card.querySelector('.practical');const companion=card.querySelector('.companion');
-    const detail=document.createElement('details');detail.className='place-story practical stop-details';
+    const detail=document.createElement('details');detail.className='stop-details';
     const summary=document.createElement('summary');summary.dataset.editorialUi='';summary.textContent='Ver detalles de esta parada';detail.append(summary);story.before(detail);
     [story,practical,companion].filter(Boolean).forEach(old=>{
       const label=old.querySelector(':scope>summary');const section=document.createElement('section');section.className='stop-subsection';
@@ -1473,7 +1568,8 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
       while(label.firstChild)heading.append(label.firstChild);label.remove();section.append(heading);
       while(old.firstChild)section.append(old.firstChild);detail.append(section);old.remove();
     });
-    detail.open=card.dataset.slot==='0';
+    detail.open=false;
+    card.append(detail);
   });
   document.querySelectorAll('.photo-credit').forEach(caption=>{
     const text=caption.querySelector('.credit-text');if(!text)return;
@@ -1538,7 +1634,7 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
       const section=document.createElement('section');section.className='hotel-subsection';const heading=document.createElement('h4');const label=old.querySelector(':scope>summary');
       if(label.hasAttribute('data-editorial-ui'))heading.dataset.editorialUi='';
       while(label.firstChild)heading.append(label.firstChild);label.remove();section.append(heading);
-      if(index===0&&room)section.append(room);if(index===2&&quote)section.append(quote);
+      if(index===0&&room)body.querySelector('h3').after(room);if(index===2&&quote)section.append(quote);
       while(old.firstChild)section.append(old.firstChild);detail.append(section);old.remove();
     });
     const price=body.querySelector('.price');const badge=price.nextElementSibling;
@@ -1554,6 +1650,104 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
     meter.setAttribute('aria-valuetext',`${meter.value}% de cobertura de datos`);
     const heading=meter.closest('.hotel-subsection').querySelector('h4');heading.after(group);group.append(label,meter);
   });
+
+  // One presentation owner for disclosure, navigation and known-cost summaries.
+  const itinerary=document.getElementById('recorrido');
+  const heading=itinerary.querySelector('.section-head');
+  const info=document.createElement('details');info.className='itinerary-info';
+  const infoTitle=document.createElement('summary');infoTitle.dataset.editorialUi='';infoTitle.textContent='Información del itinerario';info.append(infoTitle);
+  info.append(heading.querySelector(':scope>p'),heading.nextElementSibling);
+  info.append(document.getElementById('actualizacion'));
+  itinerary.querySelector('.itinerary-dock').after(info);
+  function revealInformation(){
+    const target=document.getElementById(location.hash.slice(1));
+    if(target&&info.contains(target)){info.open=true;target.scrollIntoView({block:'start'});}
+  }
+  addEventListener('hashchange',revealInformation);revealInformation();
+  const stopDetails=[...itinerary.querySelectorAll('.stop-details')];
+  const states={day:new Set(),list:new Set()};let view='day',restoring=false,printing=false;
+  function scrollAgenda(){
+    // A sticky toolbar's visual rectangle is not its place in the document.
+    const margin=parseFloat(getComputedStyle(heading).marginBottom)||0;
+    const top=heading.getBoundingClientRect().bottom+scrollY+margin-document.querySelector('.topbar').offsetHeight-12;
+    scrollTo({top,behavior:'instant'});
+  }
+  function remember(){states[view]=new Set(stopDetails.filter(n=>n.open));}
+  function restore(){restoring=true;stopDetails.forEach(n=>n.open=states[view].has(n));queueMicrotask(()=>restoring=false);}
+  stopDetails.forEach(n=>n.addEventListener('toggle',()=>{if(!restoring&&!printing)remember();}));
+  const actions=document.createElement('div');actions.className='list-actions';actions.dataset.editorialUi='';actions.hidden=true;
+  [['Expandir todos los detalles',true],['Contraer todos',false]].forEach(([text,open])=>{
+    const button=document.createElement('button');button.type='button';button.textContent=text;
+    button.addEventListener('click',()=>{states.list=new Set(open?stopDetails:[]);restore();});actions.append(button);
+  });
+  info.after(actions);
+  itinerary.querySelectorAll('.day-header').forEach(header=>{
+    const copy=header.querySelector('p:not(.eyebrow)');if(!copy)return;
+    const context=document.createElement('section');context.className='stop-subsection day-context';
+    const label=document.createElement('h4');label.dataset.editorialUi='';label.textContent='Contexto del día';context.append(label,copy);
+    header.closest('.print-day').querySelector('.stop-details').append(context);
+  });
+  stopDetails.forEach(detail=>{
+    const practical=detail.querySelectorAll(':scope>.stop-subsection')[1];
+    const copy=practical?.querySelector('p');if(!copy)return;
+    const logistics=document.createElement('p');logistics.className='stop-logistics';logistics.dataset.editorialUi='';
+    const text=copy.textContent.replace(/[\[\]]/g,'');
+    logistics.textContent=text.match(/^.*?[.!?](?:\s|$)/)?.[0].trim()||text;
+    detail.closest('.activity-card').querySelector('.activity-body').append(logistics);
+  });
+  document.querySelectorAll('[data-itinerary-view]').forEach(button=>button.addEventListener('click',()=>{
+    const next=button.dataset.itineraryView;if(next===view)return;
+    remember();view=next;restore();actions.hidden=view!=='list';
+    if(view==='list')scrollAgenda();else itinerary.scrollIntoView({block:'start',behavior:'instant'});
+  }));
+  window.addEventListener('beforeprint',()=>{printing=true;});
+  // app.js restores its synchronous DOM snapshot; only then remember that state.
+  window.addEventListener('afterprint',()=>{remember();setTimeout(()=>{printing=false;},0);});
+  const header=document.querySelector('.topbar');
+  new ResizeObserver(()=>document.documentElement.style.setProperty('--header-height',`${Math.ceil(header.getBoundingClientRect().height)}px`)).observe(header);
+  document.querySelector('.hero-brand').classList.add('visually-hidden');
+  document.querySelectorAll('.topbar a[href="#recorrido"]').forEach(link=>link.addEventListener('click',event=>{
+    event.preventDefault();history.replaceState(null,'','#recorrido');
+    if(view==='list')scrollAgenda();else itinerary.scrollIntoView({block:'start',behavior:'instant'});
+  }));
+  document.querySelectorAll('.hotel-description').forEach(n=>n.removeAttribute('open'));
+  document.querySelectorAll('.hotel-details .hotel-subsection:first-of-type').forEach(section=>{
+    const description=section.querySelector('p');if(!description)return;
+    const preview=document.createElement('p');preview.className='hotel-preview';preview.dataset.editorialUi='';
+    preview.textContent=description.textContent.match(/^.*?[.!?](?:\s|$)/)?.[0].trim()||description.textContent;
+    section.closest('.hotel-body').querySelector('h3').nextElementSibling.after(preview);
+  });
+  const budget=document.getElementById('presupuesto'),layout=budget.querySelector('.budget-layout');
+  const summary=document.getElementById('budget-summary');layout.prepend(summary);
+  const breakdown=document.createElement('details');breakdown.className='summary-breakdown';
+  const breakdownTitle=document.createElement('summary');breakdownTitle.dataset.editorialUi='';breakdownTitle.textContent='Desglose y pendientes';breakdown.append(breakdownTitle);
+  ['total-cad','comparison','category-totals','pending-costs'].forEach(id=>breakdown.append(document.getElementById(id)));
+  breakdown.append(summary.querySelector(':scope>details'));
+  summary.querySelector('#reset-budget').before(breakdown);
+  const explanation=document.createElement('details');explanation.className='budget-explanation-details';
+  const explanationTitle=document.createElement('summary');explanationTitle.dataset.editorialUi='';explanationTitle.textContent='Supuestos y alcance del presupuesto';explanation.append(explanationTitle);
+  budget.querySelectorAll('.budget-head>p:not(.eyebrow)').forEach(p=>explanation.append(p));
+  const form=layout.querySelector(':scope>div');form.prepend(explanation);
+  const bar=budget.querySelector('.mobile-budget');
+  bar.querySelector('.reserve-hint').classList.add('visually-hidden');
+  const mobileOriginal=document.getElementById('mobile-total');mobileOriginal.classList.add('visually-hidden');
+  const mobileAmount=document.createElement('strong');mobileAmount.className='mobile-known';mobileAmount.dataset.editorialUi='';mobileOriginal.after(mobileAmount);
+  const perPerson=document.createElement('span');perPerson.className='mobile-known-label';perPerson.dataset.editorialUi='';perPerson.textContent='Conocido / persona · MXN';mobileAmount.before(perPerson);
+  const barLink=bar.querySelector('a');barLink.textContent='Ver detalle';
+  function syncKnownSummary(){mobileAmount.textContent=values[0].amount.textContent||'—';}
+  new MutationObserver(syncKnownSummary).observe(values[0].amount,{childList:true});syncKnownSummary();
+  const narrow=matchMedia('(max-width:1023px)');let frame;
+  function updateBar(){
+    frame=null;const b=budget.getBoundingClientRect(),s=summary.getBoundingClientRect();
+    const headerHeight=header.getBoundingClientRect().height;
+    const summaryVisible=s.bottom>headerHeight&&s.top<innerHeight;
+    const visible=narrow.matches&&b.top<innerHeight&&b.bottom>headerHeight&&!summaryVisible;
+    bar.classList.toggle('is-visible',visible);
+    budget.style.setProperty('--budget-bar-space',visible?`${bar.offsetHeight}px`:'0px');
+  }
+  function scheduleBar(){if(!frame)frame=requestAnimationFrame(updateBar);}
+  addEventListener('scroll',scheduleBar,{passive:true});addEventListener('resize',scheduleBar);narrow.addEventListener('change',scheduleBar);
+  new ResizeObserver(scheduleBar).observe(summary);new ResizeObserver(scheduleBar).observe(bar);scheduleBar();
 })();
 </script>
 </body></html>

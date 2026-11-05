@@ -5,6 +5,7 @@
 - No modificar `src/budget.js` ni las fórmulas de `src/app.js`.
 - No añadir imágenes, fuentes remotas, servicios, CDNs, analítica ni frameworks.
 - Newsreader y Plus Jakarta Sans incrustadas. Un acento rojo arce. Mobile-first, movimiento reducido, controles de 44 px.
-- Rama `redesign/invierno-editorial`; nunca publicar en main durante el rediseño.
+- Trabajar en una rama de revisión desde main; publicar sólo tras autorización explícita.
 - Verificar paridad, calculadora, pestañas, axe y red con los scripts de `scripts/`; capturas a 390/768/1440 y revisión a 320/1024.
 - `baseline/index.html` conserva el sitio público de partida para pruebas; no regenerarlo desde el rediseño.
+- Calidad editorial: comprobar con capturas la densidad de agenda y la jerarquía, además de axe. Medir texto visible con `checkVisibility()`: los descendientes de details cerrados pueden tener rectángulos aunque no se vean. Mantener un solo controlador de apertura por vista; app.js ya restaura el DOM tras imprimir y duplicar esa restauración puede perder aperturas inmediatas. Probar 390→1440→390 dentro del presupuesto para detectar barras persistentes duplicadas.
