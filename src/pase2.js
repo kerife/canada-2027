@@ -32,4 +32,19 @@
     });
     detail.open=card.dataset.slot==='0';
   });
+  document.querySelectorAll('.photo-credit').forEach(caption=>{
+    const text=caption.querySelector('.credit-text');if(!text)return;
+    let anchor=text.querySelector('a');
+    if(!anchor){
+      const alt=caption.closest('figure').querySelector('img')?.alt;
+      const credit=[...document.querySelectorAll('.credits-list li')].find(item=>item.textContent.startsWith(alt));
+      const source=credit?.querySelector('a[href]');
+      if(source){anchor=document.createElement('a');anchor.href=source.href;anchor.target='_blank';anchor.rel='noopener noreferrer';anchor.dataset.addedCredit='';}
+    }
+    if(anchor){
+      const content=document.createDocumentFragment();
+      [...text.childNodes].forEach(node=>{if(node===anchor){while(node.firstChild)content.append(node.firstChild);}else content.append(node);});
+      anchor.replaceChildren(content);anchor.title=anchor.textContent.replace(/\s+/g,' ').trim();caption.replaceChildren(anchor);
+    }else {caption.replaceChildren(...text.childNodes);}
+  });
 })();

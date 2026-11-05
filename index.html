@@ -701,6 +701,12 @@ body input[type=checkbox] { min-height:var(--tap);height:var(--tap);width:var(--
 #inicio .stop-subsection h4 { font-size:var(--text-section);line-height:1.4;margin:0 0 var(--space-2); }
 #inicio .list-view .stop-details { grid-column:1 / -1;grid-row:auto; }
 #inicio .stop-details .companion { border:0; }
+#inicio figure.photo { aspect-ratio:auto;height:auto;overflow:visible;background:transparent; }
+#inicio figure.photo>img { display:block;height:auto; }
+#inicio .photo-credit { position:relative!important;display:block;height:var(--space-8);max-height:var(--text-figure);overflow:visible;background:transparent!important;color:var(--ink);font:var(--text-meta)/var(--space-8) var(--sans); }
+#inicio .photo-credit>a { display:block!important;min-height:var(--tap)!important;height:var(--tap);line-height:var(--space-8);padding:var(--space-3) 0 0;transform:translateY(calc(-1 * var(--space-3)));color:var(--ink)!important;white-space:nowrap;overflow:hidden;text-overflow:ellipsis; }
+#inicio .hero-photo { height:calc(100% - var(--space-8)); }
+#inicio .hero-photo .photo-credit { position:absolute!important;inset:auto 0 calc(-1 * var(--space-8));width:100%;max-width:none!important;background:var(--bg)!important;padding:0 var(--space-6)!important; }
 @media screen and (max-width:650px) {
   :root { --nav-height:97px; }
   #inicio p,#inicio li,#inicio dd,#inicio label { font-size:var(--text-body); }
@@ -1354,6 +1360,21 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
       while(old.firstChild)section.append(old.firstChild);detail.append(section);old.remove();
     });
     detail.open=card.dataset.slot==='0';
+  });
+  document.querySelectorAll('.photo-credit').forEach(caption=>{
+    const text=caption.querySelector('.credit-text');if(!text)return;
+    let anchor=text.querySelector('a');
+    if(!anchor){
+      const alt=caption.closest('figure').querySelector('img')?.alt;
+      const credit=[...document.querySelectorAll('.credits-list li')].find(item=>item.textContent.startsWith(alt));
+      const source=credit?.querySelector('a[href]');
+      if(source){anchor=document.createElement('a');anchor.href=source.href;anchor.target='_blank';anchor.rel='noopener noreferrer';anchor.dataset.addedCredit='';}
+    }
+    if(anchor){
+      const content=document.createDocumentFragment();
+      [...text.childNodes].forEach(node=>{if(node===anchor){while(node.firstChild)content.append(node.firstChild);}else content.append(node);});
+      anchor.replaceChildren(content);anchor.title=anchor.textContent.replace(/\s+/g,' ').trim();caption.replaceChildren(anchor);
+    }else {caption.replaceChildren(...text.childNodes);}
   });
 })();
 </script>
