@@ -1,0 +1,4602 @@
+[
+  {
+    "chars": 55924,
+    "smallChars": 29711,
+    "smallPercent": 53.127458693941776,
+    "tiny": [],
+    "controls": [
+      {
+        "tag": "A",
+        "id": "",
+        "cls": "",
+        "width": 41.25,
+        "height": 44,
+        "text": "El viaje"
+      },
+      {
+        "tag": "A",
+        "id": "",
+        "cls": "",
+        "width": 41.453125,
+        "height": 44,
+        "text": "Museo"
+      }
+    ],
+    "overflow": false,
+    "visibleBracketLabels": [
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado · 04/11/2026]",
+        "chars": 23,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado / Sujeto a cambio]",
+        "chars": 40,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado]",
+        "chars": 22,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado]",
+        "chars": 22,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Sujeto a cambio]",
+        "chars": 17,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado]",
+        "chars": 22,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado · consulta 04/11/2026]",
+        "chars": 44,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Sujeto a cambio · políticas consultadas 04/11/2026]",
+        "chars": 52,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado / Sujeto a cambio · 04/11/2026]",
+        "chars": 53,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado / Sujeto a cambio · 04/11/2026]",
+        "chars": 53,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado · consulta 04/11/2026]",
+        "chars": 44,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado / Sujeto a cambio · consulta 04/11/2026]",
+        "chars": 62,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado · 04/11/2026]",
+        "chars": 23,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado / Sujeto a cambio]",
+        "chars": 40,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar por ustedes]",
+        "chars": 36,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Sujeto a cambio · consulta 04/11/2026]",
+        "chars": 39,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado · 04/11/2026]",
+        "chars": 23,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado / Sujeto a cambio · 04/11/2026]",
+        "chars": 53,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar · 04/11/2026]",
+        "chars": 37,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar · revisión 04/11/2026]",
+        "chars": 46,
+        "tag": "SPAN"
+      }
+    ],
+    "captions": [
+      {
+        "text": "Petit-Champlain · Foto de archivo / Francis GagnonDestination Québec cité · Decoración ilustrativa",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Aeropuerto YUL · terminal real ↗",
+        "ellipsis": "ellipsis",
+        "overflow": false,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Gare du Palais · estación, fotografía de primavera ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Desfile del Carnaval · edición anterior ↗",
+        "ellipsis": "ellipsis",
+        "overflow": false,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Bonaparte · Tourisme Montréal",
+        "ellipsis": "ellipsis",
+        "overflow": false,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Leméac · fotografía de su sitio oficial",
+        "ellipsis": "ellipsis",
+        "overflow": false,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Foto de archivo · sin habitación asignada ↗",
+        "ellipsis": "ellipsis",
+        "overflow": false,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "ByWard Market · zona propuesta, no fotografía de hotel ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Fairfield Downtown · habitación de archivo ↗",
+        "ellipsis": "ellipsis",
+        "overflow": false,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Hyatt Centric · patio, foto de otra estación ↗",
+        "ellipsis": "ellipsis",
+        "overflow": false,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Foto de archivo · sin habitación asignada ↗",
+        "ellipsis": "ellipsis",
+        "overflow": false,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      }
+    ],
+    "width": 320,
+    "expanded": false
+  },
+  {
+    "chars": 98913,
+    "smallChars": 39550,
+    "smallPercent": 39.984632960278226,
+    "tiny": [],
+    "controls": [
+      {
+        "tag": "A",
+        "id": "",
+        "cls": "",
+        "width": 41.25,
+        "height": 44,
+        "text": "El viaje"
+      },
+      {
+        "tag": "A",
+        "id": "",
+        "cls": "",
+        "width": 41.453125,
+        "height": 44,
+        "text": "Museo"
+      }
+    ],
+    "overflow": false,
+    "visibleBracketLabels": [
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado · 04/11/2026]",
+        "chars": 23,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado / Sujeto a cambio]",
+        "chars": 40,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado]",
+        "chars": 22,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado]",
+        "chars": 22,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Sujeto a cambio]",
+        "chars": 17,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado]",
+        "chars": 22,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado · consulta 04/11/2026]",
+        "chars": 44,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Sujeto a cambio · políticas consultadas 04/11/2026]",
+        "chars": 52,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado / Sujeto a cambio · 04/11/2026]",
+        "chars": 53,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado / Sujeto a cambio · 04/11/2026]",
+        "chars": 53,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado · consulta 04/11/2026]",
+        "chars": 44,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado / Sujeto a cambio · consulta 04/11/2026]",
+        "chars": 62,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado · 04/11/2026]",
+        "chars": 23,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado / Sujeto a cambio]",
+        "chars": 40,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar por ustedes]",
+        "chars": 36,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Sujeto a cambio · consulta 04/11/2026]",
+        "chars": 39,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado · 04/11/2026]",
+        "chars": 23,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado / Sujeto a cambio · 04/11/2026]",
+        "chars": 53,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Sujeto a cambio · 04/11/2026]",
+        "chars": 30,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado · consulta 04/11/2026]",
+        "chars": 44,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado · consulta 04/11/2026]",
+        "chars": 44,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado · 04/11/2026]",
+        "chars": 23,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado · cambio autorizado]",
+        "chars": 30,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar · revisión 04/11/2026]",
+        "chars": 46,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar · revisión 04/11/2026]",
+        "chars": 46,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado · 04/11/2026]",
+        "chars": 23,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado / Sujeto a cambio · 04/11/2026]",
+        "chars": 53,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar · 04/11/2026]",
+        "chars": 37,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar · revisión 04/11/2026]",
+        "chars": 46,
+        "tag": "SPAN"
+      }
+    ],
+    "captions": [
+      {
+        "text": "Petit-Champlain · Foto de archivo / Francis GagnonDestination Québec cité · Decoración ilustrativa",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Aeropuerto YUL · terminal real ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Gare du Palais · estación, fotografía de primavera ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Desfile del Carnaval · edición anterior ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Palacio de hielo del Carnaval · archivo ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Aux Deux Lions · hotel candidato ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Blaxton Cartier · candidato, sin reserva ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Place Royale · invierno ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Buffet de l’Antiquaire ↗",
+        "ellipsis": "ellipsis",
+        "overflow": false,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Frontenac y Terrasse Dufferin · invierno ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Korrigane · microbrasserie propuesta ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Musée de la civilisation · fachada en otra estación ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Aux Deux Lions · hotel candidato ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Centre Vidéotron · sede de los Remparts ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Gare du Palais · estación, fotografía de primavera ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "ByWard Market · archivo invernal; decoración estacional ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Parliament Hill · archivo; obras actuales no representadas ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "National Gallery · fachada en otra estación ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Canal Rideau · archivo; hielo no garantizado ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Gare Centrale · estación de llegada en Montreal ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Belvédère Kondiaronk · Mont Royal ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "St-Viateur · panadería del Mile End ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Café Olimpico · Mile End ↗",
+        "ellipsis": "ellipsis",
+        "overflow": false,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "La Banquise · poutine del restaurante ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Rue Saint-Paul · Viejo Montreal ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Notre-Dame de Montreal · interior ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Montréal en Lumière · edición anterior ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Marché Jean-Talon · puestos del mercado ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Monville · habitación de referencia ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Bonaparte · sala Verrière ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Tremblant · pueblo peatonal, archivo invernal ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Escuela oficial de Tremblant · foto de archivo, no acredita proveedor del tour ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Biodôme · fotografía de Espace pour la vie ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "MONTRÉAL EN LUMIÈRE · edición anterior, no programa confirmado ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "YUL · aeropuerto de salida ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "AICM · Terminal 2, galería oficial ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Bonaparte · Tourisme Montréal",
+        "ellipsis": "ellipsis",
+        "overflow": false,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Leméac · fotografía de su sitio oficial",
+        "ellipsis": "ellipsis",
+        "overflow": false,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Foto de archivo · sin habitación asignada ↗",
+        "ellipsis": "ellipsis",
+        "overflow": false,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "ByWard Market · zona propuesta, no fotografía de hotel ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Fairfield Downtown · habitación de archivo ↗",
+        "ellipsis": "ellipsis",
+        "overflow": false,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Hyatt Centric · patio, foto de otra estación ↗",
+        "ellipsis": "ellipsis",
+        "overflow": false,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Foto de archivo · sin habitación asignada ↗",
+        "ellipsis": "ellipsis",
+        "overflow": false,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      }
+    ],
+    "width": 320,
+    "expanded": true
+  },
+  {
+    "chars": 55924,
+    "smallChars": 29711,
+    "smallPercent": 53.127458693941776,
+    "tiny": [],
+    "controls": [
+      {
+        "tag": "A",
+        "id": "",
+        "cls": "",
+        "width": 41.25,
+        "height": 44,
+        "text": "El viaje"
+      },
+      {
+        "tag": "A",
+        "id": "",
+        "cls": "",
+        "width": 41.453125,
+        "height": 44,
+        "text": "Museo"
+      }
+    ],
+    "overflow": false,
+    "visibleBracketLabels": [
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado · 04/11/2026]",
+        "chars": 23,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado / Sujeto a cambio]",
+        "chars": 40,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado]",
+        "chars": 22,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado]",
+        "chars": 22,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Sujeto a cambio]",
+        "chars": 17,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado]",
+        "chars": 22,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado · consulta 04/11/2026]",
+        "chars": 44,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Sujeto a cambio · políticas consultadas 04/11/2026]",
+        "chars": 52,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado / Sujeto a cambio · 04/11/2026]",
+        "chars": 53,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado / Sujeto a cambio · 04/11/2026]",
+        "chars": 53,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado · consulta 04/11/2026]",
+        "chars": 44,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado / Sujeto a cambio · consulta 04/11/2026]",
+        "chars": 62,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado · 04/11/2026]",
+        "chars": 23,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado / Sujeto a cambio]",
+        "chars": 40,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar por ustedes]",
+        "chars": 36,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Sujeto a cambio · consulta 04/11/2026]",
+        "chars": 39,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado · 04/11/2026]",
+        "chars": 23,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado / Sujeto a cambio · 04/11/2026]",
+        "chars": 53,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar · 04/11/2026]",
+        "chars": 37,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar · revisión 04/11/2026]",
+        "chars": 46,
+        "tag": "SPAN"
+      }
+    ],
+    "captions": [
+      {
+        "text": "Petit-Champlain · Foto de archivo / Francis GagnonDestination Québec cité · Decoración ilustrativa",
+        "ellipsis": "ellipsis",
+        "overflow": false,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Aeropuerto YUL · terminal real ↗",
+        "ellipsis": "ellipsis",
+        "overflow": false,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Gare du Palais · estación, fotografía de primavera ↗",
+        "ellipsis": "ellipsis",
+        "overflow": false,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Desfile del Carnaval · edición anterior ↗",
+        "ellipsis": "ellipsis",
+        "overflow": false,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Bonaparte · Tourisme Montréal",
+        "ellipsis": "ellipsis",
+        "overflow": false,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Leméac · fotografía de su sitio oficial",
+        "ellipsis": "ellipsis",
+        "overflow": false,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Foto de archivo · sin habitación asignada ↗",
+        "ellipsis": "ellipsis",
+        "overflow": false,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "ByWard Market · zona propuesta, no fotografía de hotel ↗",
+        "ellipsis": "ellipsis",
+        "overflow": false,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Fairfield Downtown · habitación de archivo ↗",
+        "ellipsis": "ellipsis",
+        "overflow": false,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Hyatt Centric · patio, foto de otra estación ↗",
+        "ellipsis": "ellipsis",
+        "overflow": false,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Foto de archivo · sin habitación asignada ↗",
+        "ellipsis": "ellipsis",
+        "overflow": false,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      }
+    ],
+    "width": 390,
+    "expanded": false
+  },
+  {
+    "chars": 98913,
+    "smallChars": 39550,
+    "smallPercent": 39.984632960278226,
+    "tiny": [],
+    "controls": [
+      {
+        "tag": "A",
+        "id": "",
+        "cls": "",
+        "width": 41.25,
+        "height": 44,
+        "text": "El viaje"
+      },
+      {
+        "tag": "A",
+        "id": "",
+        "cls": "",
+        "width": 41.453125,
+        "height": 44,
+        "text": "Museo"
+      }
+    ],
+    "overflow": false,
+    "visibleBracketLabels": [
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado · 04/11/2026]",
+        "chars": 23,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado / Sujeto a cambio]",
+        "chars": 40,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado]",
+        "chars": 22,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado]",
+        "chars": 22,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Sujeto a cambio]",
+        "chars": 17,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado]",
+        "chars": 22,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado · consulta 04/11/2026]",
+        "chars": 44,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Sujeto a cambio · políticas consultadas 04/11/2026]",
+        "chars": 52,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado / Sujeto a cambio · 04/11/2026]",
+        "chars": 53,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado / Sujeto a cambio · 04/11/2026]",
+        "chars": 53,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado · consulta 04/11/2026]",
+        "chars": 44,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado / Sujeto a cambio · consulta 04/11/2026]",
+        "chars": 62,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado · 04/11/2026]",
+        "chars": 23,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado / Sujeto a cambio]",
+        "chars": 40,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar por ustedes]",
+        "chars": 36,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Sujeto a cambio · consulta 04/11/2026]",
+        "chars": 39,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado · 04/11/2026]",
+        "chars": 23,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado / Sujeto a cambio · 04/11/2026]",
+        "chars": 53,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Sujeto a cambio · 04/11/2026]",
+        "chars": 30,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado · consulta 04/11/2026]",
+        "chars": 44,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado · consulta 04/11/2026]",
+        "chars": 44,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado · 04/11/2026]",
+        "chars": 23,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado · cambio autorizado]",
+        "chars": 30,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar · revisión 04/11/2026]",
+        "chars": 46,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar · revisión 04/11/2026]",
+        "chars": 46,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado · 04/11/2026]",
+        "chars": 23,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado / Sujeto a cambio · 04/11/2026]",
+        "chars": 53,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar · 04/11/2026]",
+        "chars": 37,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar · revisión 04/11/2026]",
+        "chars": 46,
+        "tag": "SPAN"
+      }
+    ],
+    "captions": [
+      {
+        "text": "Petit-Champlain · Foto de archivo / Francis GagnonDestination Québec cité · Decoración ilustrativa",
+        "ellipsis": "ellipsis",
+        "overflow": false,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Aeropuerto YUL · terminal real ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Gare du Palais · estación, fotografía de primavera ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Desfile del Carnaval · edición anterior ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Palacio de hielo del Carnaval · archivo ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Aux Deux Lions · hotel candidato ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Blaxton Cartier · candidato, sin reserva ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Place Royale · invierno ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Buffet de l’Antiquaire ↗",
+        "ellipsis": "ellipsis",
+        "overflow": false,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Frontenac y Terrasse Dufferin · invierno ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Korrigane · microbrasserie propuesta ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Musée de la civilisation · fachada en otra estación ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Aux Deux Lions · hotel candidato ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Centre Vidéotron · sede de los Remparts ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Gare du Palais · estación, fotografía de primavera ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "ByWard Market · archivo invernal; decoración estacional ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Parliament Hill · archivo; obras actuales no representadas ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "National Gallery · fachada en otra estación ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Canal Rideau · archivo; hielo no garantizado ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Gare Centrale · estación de llegada en Montreal ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Belvédère Kondiaronk · Mont Royal ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "St-Viateur · panadería del Mile End ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Café Olimpico · Mile End ↗",
+        "ellipsis": "ellipsis",
+        "overflow": false,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "La Banquise · poutine del restaurante ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Rue Saint-Paul · Viejo Montreal ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Notre-Dame de Montreal · interior ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Montréal en Lumière · edición anterior ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Marché Jean-Talon · puestos del mercado ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Monville · habitación de referencia ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Bonaparte · sala Verrière ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Tremblant · pueblo peatonal, archivo invernal ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Escuela oficial de Tremblant · foto de archivo, no acredita proveedor del tour ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Biodôme · fotografía de Espace pour la vie ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "MONTRÉAL EN LUMIÈRE · edición anterior, no programa confirmado ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "YUL · aeropuerto de salida ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "AICM · Terminal 2, galería oficial ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Bonaparte · Tourisme Montréal",
+        "ellipsis": "ellipsis",
+        "overflow": false,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Leméac · fotografía de su sitio oficial",
+        "ellipsis": "ellipsis",
+        "overflow": false,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Foto de archivo · sin habitación asignada ↗",
+        "ellipsis": "ellipsis",
+        "overflow": false,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "ByWard Market · zona propuesta, no fotografía de hotel ↗",
+        "ellipsis": "ellipsis",
+        "overflow": false,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Fairfield Downtown · habitación de archivo ↗",
+        "ellipsis": "ellipsis",
+        "overflow": false,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Hyatt Centric · patio, foto de otra estación ↗",
+        "ellipsis": "ellipsis",
+        "overflow": false,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Foto de archivo · sin habitación asignada ↗",
+        "ellipsis": "ellipsis",
+        "overflow": false,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      }
+    ],
+    "width": 390,
+    "expanded": true
+  },
+  {
+    "chars": 56251,
+    "smallChars": 30111,
+    "smallPercent": 53.529715027288404,
+    "tiny": [],
+    "controls": [
+      {
+        "tag": "A",
+        "id": "",
+        "cls": "",
+        "width": 41.25,
+        "height": 44,
+        "text": "El viaje"
+      },
+      {
+        "tag": "A",
+        "id": "",
+        "cls": "",
+        "width": 41.453125,
+        "height": 44,
+        "text": "Museo"
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "cls": "step-minus",
+        "width": 27.3125,
+        "height": 44,
+        "text": "−"
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "cls": "step-minus",
+        "width": 27.3125,
+        "height": 44,
+        "text": "−"
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "cls": "step-minus",
+        "width": 27.3125,
+        "height": 44,
+        "text": "−"
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "cls": "step-minus",
+        "width": 27.3125,
+        "height": 44,
+        "text": "−"
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "cls": "step-minus",
+        "width": 27.3125,
+        "height": 44,
+        "text": "−"
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "cls": "step-minus",
+        "width": 27.3125,
+        "height": 44,
+        "text": "−"
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "cls": "step-minus",
+        "width": 27.3125,
+        "height": 44,
+        "text": "−"
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "cls": "step-minus",
+        "width": 27.3125,
+        "height": 44,
+        "text": "−"
+      }
+    ],
+    "overflow": false,
+    "visibleBracketLabels": [
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado · 04/11/2026]",
+        "chars": 23,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado / Sujeto a cambio]",
+        "chars": 40,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado]",
+        "chars": 22,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado]",
+        "chars": 22,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Sujeto a cambio]",
+        "chars": 17,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado]",
+        "chars": 22,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado · consulta 04/11/2026]",
+        "chars": 44,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Sujeto a cambio · políticas consultadas 04/11/2026]",
+        "chars": 52,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado / Sujeto a cambio · 04/11/2026]",
+        "chars": 53,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado / Sujeto a cambio · 04/11/2026]",
+        "chars": 53,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado · consulta 04/11/2026]",
+        "chars": 44,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado / Sujeto a cambio · consulta 04/11/2026]",
+        "chars": 62,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado · 04/11/2026]",
+        "chars": 23,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado / Sujeto a cambio]",
+        "chars": 40,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar por ustedes]",
+        "chars": 36,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Sujeto a cambio · consulta 04/11/2026]",
+        "chars": 39,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado · 04/11/2026]",
+        "chars": 23,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado / Sujeto a cambio · 04/11/2026]",
+        "chars": 53,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar · 04/11/2026]",
+        "chars": 37,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar · revisión 04/11/2026]",
+        "chars": 46,
+        "tag": "SPAN"
+      }
+    ],
+    "captions": [
+      {
+        "text": "Petit-Champlain · Foto de archivo / Francis GagnonDestination Québec cité · Decoración ilustrativa",
+        "ellipsis": "ellipsis",
+        "overflow": false,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Aeropuerto YUL · terminal real ↗",
+        "ellipsis": "ellipsis",
+        "overflow": false,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Gare du Palais · estación, fotografía de primavera ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Desfile del Carnaval · edición anterior ↗",
+        "ellipsis": "ellipsis",
+        "overflow": false,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Bonaparte · Tourisme Montréal",
+        "ellipsis": "ellipsis",
+        "overflow": false,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Leméac · fotografía de su sitio oficial",
+        "ellipsis": "ellipsis",
+        "overflow": false,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Foto de archivo · sin habitación asignada ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "ByWard Market · zona propuesta, no fotografía de hotel ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Fairfield Downtown · habitación de archivo ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Hyatt Centric · patio, foto de otra estación ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Foto de archivo · sin habitación asignada ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      }
+    ],
+    "width": 768,
+    "expanded": false
+  },
+  {
+    "chars": 99240,
+    "smallChars": 42625,
+    "smallPercent": 42.95143087464732,
+    "tiny": [],
+    "controls": [
+      {
+        "tag": "A",
+        "id": "",
+        "cls": "",
+        "width": 41.25,
+        "height": 44,
+        "text": "El viaje"
+      },
+      {
+        "tag": "A",
+        "id": "",
+        "cls": "",
+        "width": 41.453125,
+        "height": 44,
+        "text": "Museo"
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "cls": "step-minus",
+        "width": 27.3125,
+        "height": 44,
+        "text": "−"
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "cls": "step-minus",
+        "width": 27.3125,
+        "height": 44,
+        "text": "−"
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "cls": "step-minus",
+        "width": 27.3125,
+        "height": 44,
+        "text": "−"
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "cls": "step-minus",
+        "width": 27.3125,
+        "height": 44,
+        "text": "−"
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "cls": "step-minus",
+        "width": 27.3125,
+        "height": 44,
+        "text": "−"
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "cls": "step-minus",
+        "width": 27.3125,
+        "height": 44,
+        "text": "−"
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "cls": "step-minus",
+        "width": 27.3125,
+        "height": 44,
+        "text": "−"
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "cls": "step-minus",
+        "width": 27.3125,
+        "height": 44,
+        "text": "−"
+      }
+    ],
+    "overflow": false,
+    "visibleBracketLabels": [
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado · 04/11/2026]",
+        "chars": 23,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado / Sujeto a cambio]",
+        "chars": 40,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado]",
+        "chars": 22,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado]",
+        "chars": 22,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Sujeto a cambio]",
+        "chars": 17,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado]",
+        "chars": 22,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado · consulta 04/11/2026]",
+        "chars": 44,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Sujeto a cambio · políticas consultadas 04/11/2026]",
+        "chars": 52,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado / Sujeto a cambio · 04/11/2026]",
+        "chars": 53,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado / Sujeto a cambio · 04/11/2026]",
+        "chars": 53,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado · consulta 04/11/2026]",
+        "chars": 44,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado / Sujeto a cambio · consulta 04/11/2026]",
+        "chars": 62,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado · 04/11/2026]",
+        "chars": 23,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado / Sujeto a cambio]",
+        "chars": 40,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar por ustedes]",
+        "chars": 36,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Sujeto a cambio · consulta 04/11/2026]",
+        "chars": 39,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado · 04/11/2026]",
+        "chars": 23,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado / Sujeto a cambio · 04/11/2026]",
+        "chars": 53,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Sujeto a cambio · 04/11/2026]",
+        "chars": 30,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado · consulta 04/11/2026]",
+        "chars": 44,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado · consulta 04/11/2026]",
+        "chars": 44,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado · 04/11/2026]",
+        "chars": 23,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado · cambio autorizado]",
+        "chars": 30,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar · revisión 04/11/2026]",
+        "chars": 46,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar · revisión 04/11/2026]",
+        "chars": 46,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado · 04/11/2026]",
+        "chars": 23,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado / Sujeto a cambio · 04/11/2026]",
+        "chars": 53,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar · 04/11/2026]",
+        "chars": 37,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar · revisión 04/11/2026]",
+        "chars": 46,
+        "tag": "SPAN"
+      }
+    ],
+    "captions": [
+      {
+        "text": "Petit-Champlain · Foto de archivo / Francis GagnonDestination Québec cité · Decoración ilustrativa",
+        "ellipsis": "ellipsis",
+        "overflow": false,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Aeropuerto YUL · terminal real ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Gare du Palais · estación, fotografía de primavera ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Desfile del Carnaval · edición anterior ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Palacio de hielo del Carnaval · archivo ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Aux Deux Lions · hotel candidato ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Blaxton Cartier · candidato, sin reserva ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Place Royale · invierno ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Buffet de l’Antiquaire ↗",
+        "ellipsis": "ellipsis",
+        "overflow": false,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Frontenac y Terrasse Dufferin · invierno ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Korrigane · microbrasserie propuesta ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Musée de la civilisation · fachada en otra estación ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Aux Deux Lions · hotel candidato ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Centre Vidéotron · sede de los Remparts ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Gare du Palais · estación, fotografía de primavera ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "ByWard Market · archivo invernal; decoración estacional ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Parliament Hill · archivo; obras actuales no representadas ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "National Gallery · fachada en otra estación ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Canal Rideau · archivo; hielo no garantizado ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Gare Centrale · estación de llegada en Montreal ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Belvédère Kondiaronk · Mont Royal ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "St-Viateur · panadería del Mile End ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Café Olimpico · Mile End ↗",
+        "ellipsis": "ellipsis",
+        "overflow": false,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "La Banquise · poutine del restaurante ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Rue Saint-Paul · Viejo Montreal ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Notre-Dame de Montreal · interior ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Montréal en Lumière · edición anterior ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Marché Jean-Talon · puestos del mercado ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Monville · habitación de referencia ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Bonaparte · sala Verrière ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Tremblant · pueblo peatonal, archivo invernal ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Escuela oficial de Tremblant · foto de archivo, no acredita proveedor del tour ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Biodôme · fotografía de Espace pour la vie ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "MONTRÉAL EN LUMIÈRE · edición anterior, no programa confirmado ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "YUL · aeropuerto de salida ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "AICM · Terminal 2, galería oficial ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Bonaparte · Tourisme Montréal",
+        "ellipsis": "ellipsis",
+        "overflow": false,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Leméac · fotografía de su sitio oficial",
+        "ellipsis": "ellipsis",
+        "overflow": false,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Foto de archivo · sin habitación asignada ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "ByWard Market · zona propuesta, no fotografía de hotel ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Fairfield Downtown · habitación de archivo ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Hyatt Centric · patio, foto de otra estación ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Foto de archivo · sin habitación asignada ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      }
+    ],
+    "width": 768,
+    "expanded": true
+  },
+  {
+    "chars": 56295,
+    "smallChars": 30155,
+    "smallPercent": 53.56603606004086,
+    "tiny": [],
+    "controls": [
+      {
+        "tag": "A",
+        "id": "",
+        "cls": "",
+        "width": 41.25,
+        "height": 44,
+        "text": "El viaje"
+      },
+      {
+        "tag": "A",
+        "id": "",
+        "cls": "",
+        "width": 41.453125,
+        "height": 44,
+        "text": "Museo"
+      }
+    ],
+    "overflow": false,
+    "visibleBracketLabels": [
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado · 04/11/2026]",
+        "chars": 23,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado / Sujeto a cambio]",
+        "chars": 40,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado]",
+        "chars": 22,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado]",
+        "chars": 22,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Sujeto a cambio]",
+        "chars": 17,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado]",
+        "chars": 22,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado · consulta 04/11/2026]",
+        "chars": 44,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Sujeto a cambio · políticas consultadas 04/11/2026]",
+        "chars": 52,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado / Sujeto a cambio · 04/11/2026]",
+        "chars": 53,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado / Sujeto a cambio · 04/11/2026]",
+        "chars": 53,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado · consulta 04/11/2026]",
+        "chars": 44,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado / Sujeto a cambio · consulta 04/11/2026]",
+        "chars": 62,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado · 04/11/2026]",
+        "chars": 23,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado / Sujeto a cambio]",
+        "chars": 40,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar por ustedes]",
+        "chars": 36,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Sujeto a cambio · consulta 04/11/2026]",
+        "chars": 39,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado · 04/11/2026]",
+        "chars": 23,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado / Sujeto a cambio · 04/11/2026]",
+        "chars": 53,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar · 04/11/2026]",
+        "chars": 37,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar · revisión 04/11/2026]",
+        "chars": 46,
+        "tag": "SPAN"
+      }
+    ],
+    "captions": [
+      {
+        "text": "Petit-Champlain · Foto de archivo / Francis GagnonDestination Québec cité · Decoración ilustrativa",
+        "ellipsis": "ellipsis",
+        "overflow": false,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Aeropuerto YUL · terminal real ↗",
+        "ellipsis": "ellipsis",
+        "overflow": false,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Gare du Palais · estación, fotografía de primavera ↗",
+        "ellipsis": "ellipsis",
+        "overflow": false,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Desfile del Carnaval · edición anterior ↗",
+        "ellipsis": "ellipsis",
+        "overflow": false,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Bonaparte · Tourisme Montréal",
+        "ellipsis": "ellipsis",
+        "overflow": false,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Leméac · fotografía de su sitio oficial",
+        "ellipsis": "ellipsis",
+        "overflow": false,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Foto de archivo · sin habitación asignada ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "ByWard Market · zona propuesta, no fotografía de hotel ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Fairfield Downtown · habitación de archivo ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Hyatt Centric · patio, foto de otra estación ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Foto de archivo · sin habitación asignada ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      }
+    ],
+    "width": 1440,
+    "expanded": false
+  },
+  {
+    "chars": 99292,
+    "smallChars": 42677,
+    "smallPercent": 42.981307658220196,
+    "tiny": [],
+    "controls": [
+      {
+        "tag": "A",
+        "id": "",
+        "cls": "",
+        "width": 41.25,
+        "height": 44,
+        "text": "El viaje"
+      },
+      {
+        "tag": "A",
+        "id": "",
+        "cls": "",
+        "width": 41.453125,
+        "height": 44,
+        "text": "Museo"
+      }
+    ],
+    "overflow": false,
+    "visibleBracketLabels": [
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado · 04/11/2026]",
+        "chars": 23,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado / Sujeto a cambio]",
+        "chars": 40,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado]",
+        "chars": 22,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado]",
+        "chars": 22,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Sujeto a cambio]",
+        "chars": 17,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado]",
+        "chars": 22,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado · consulta 04/11/2026]",
+        "chars": 44,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Sujeto a cambio · políticas consultadas 04/11/2026]",
+        "chars": 52,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado / Sujeto a cambio · 04/11/2026]",
+        "chars": 53,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado / Sujeto a cambio · 04/11/2026]",
+        "chars": 53,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado · consulta 04/11/2026]",
+        "chars": 44,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado / Sujeto a cambio · consulta 04/11/2026]",
+        "chars": 62,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado · 04/11/2026]",
+        "chars": 23,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado / Sujeto a cambio]",
+        "chars": 40,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar por ustedes]",
+        "chars": 36,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Sujeto a cambio · consulta 04/11/2026]",
+        "chars": 39,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado · 04/11/2026]",
+        "chars": 23,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado / Sujeto a cambio · 04/11/2026]",
+        "chars": 53,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Sujeto a cambio · 04/11/2026]",
+        "chars": 30,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado · consulta 04/11/2026]",
+        "chars": 44,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado]",
+        "chars": 10,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado · consulta 04/11/2026]",
+        "chars": 44,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado · 04/11/2026]",
+        "chars": 23,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado · cambio autorizado]",
+        "chars": 30,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar · revisión 04/11/2026]",
+        "chars": 46,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar · revisión 04/11/2026]",
+        "chars": 46,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Estimado · 04/11/2026]",
+        "chars": 23,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Confirmado publicado / Sujeto a cambio · 04/11/2026]",
+        "chars": 53,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar · 04/11/2026]",
+        "chars": 37,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar]",
+        "chars": 24,
+        "tag": "SPAN"
+      },
+      {
+        "size": 13,
+        "text": "[Pendiente de confirmar · revisión 04/11/2026]",
+        "chars": 46,
+        "tag": "SPAN"
+      }
+    ],
+    "captions": [
+      {
+        "text": "Petit-Champlain · Foto de archivo / Francis GagnonDestination Québec cité · Decoración ilustrativa",
+        "ellipsis": "ellipsis",
+        "overflow": false,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Aeropuerto YUL · terminal real ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Gare du Palais · estación, fotografía de primavera ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Desfile del Carnaval · edición anterior ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Palacio de hielo del Carnaval · archivo ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Aux Deux Lions · hotel candidato ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Blaxton Cartier · candidato, sin reserva ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Place Royale · invierno ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Buffet de l’Antiquaire ↗",
+        "ellipsis": "ellipsis",
+        "overflow": false,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Frontenac y Terrasse Dufferin · invierno ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Korrigane · microbrasserie propuesta ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Musée de la civilisation · fachada en otra estación ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Aux Deux Lions · hotel candidato ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Centre Vidéotron · sede de los Remparts ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Gare du Palais · estación, fotografía de primavera ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "ByWard Market · archivo invernal; decoración estacional ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Parliament Hill · archivo; obras actuales no representadas ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "National Gallery · fachada en otra estación ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Canal Rideau · archivo; hielo no garantizado ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Gare Centrale · estación de llegada en Montreal ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Belvédère Kondiaronk · Mont Royal ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "St-Viateur · panadería del Mile End ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Café Olimpico · Mile End ↗",
+        "ellipsis": "ellipsis",
+        "overflow": false,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "La Banquise · poutine del restaurante ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Rue Saint-Paul · Viejo Montreal ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Notre-Dame de Montreal · interior ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Montréal en Lumière · edición anterior ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Marché Jean-Talon · puestos del mercado ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Monville · habitación de referencia ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Bonaparte · sala Verrière ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Tremblant · pueblo peatonal, archivo invernal ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Escuela oficial de Tremblant · foto de archivo, no acredita proveedor del tour ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Biodôme · fotografía de Espace pour la vie ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "MONTRÉAL EN LUMIÈRE · edición anterior, no programa confirmado ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "YUL · aeropuerto de salida ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "AICM · Terminal 2, galería oficial ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Bonaparte · Tourisme Montréal",
+        "ellipsis": "ellipsis",
+        "overflow": false,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Leméac · fotografía de su sitio oficial",
+        "ellipsis": "ellipsis",
+        "overflow": false,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Foto de archivo · sin habitación asignada ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "ByWard Market · zona propuesta, no fotografía de hotel ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Fairfield Downtown · habitación de archivo ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Hyatt Centric · patio, foto de otra estación ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      },
+      {
+        "text": "Foto de archivo · sin habitación asignada ↗",
+        "ellipsis": "ellipsis",
+        "overflow": true,
+        "height": 44,
+        "lineHeight": 32,
+        "font": 13
+      }
+    ],
+    "width": 1440,
+    "expanded": true
+  }
+]

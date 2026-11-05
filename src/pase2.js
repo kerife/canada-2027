@@ -72,4 +72,10 @@
     });
   }
   new MutationObserver(showKnownAmounts).observe(document.getElementById('exact-total'),{childList:true,subtree:true});showKnownAmounts();
+  document.querySelectorAll('.state-badge').forEach(badge=>{
+    const text=badge.textContent;if(!text.startsWith('[')||!text.endsWith(']'))return;
+    const opening=document.createElement('span'),label=document.createElement('span'),closing=document.createElement('span');
+    opening.className=closing.className='visually-hidden';opening.textContent='[';closing.textContent=']';
+    label.className='state-badge__label';label.textContent=text.slice(1,-1);badge.replaceChildren(opening,label,closing);
+  });
 })();
