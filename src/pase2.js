@@ -34,6 +34,7 @@
   });
   document.querySelectorAll('.photo-credit').forEach(caption=>{
     const text=caption.querySelector('.credit-text');if(!text)return;
+    const label=document.createElement('span');label.className='visually-hidden';label.dataset.editorialUi='';label.textContent=caption.querySelector('.credit-disclosure>summary').textContent;
     let anchor=text.querySelector('a');
     if(!anchor){
       const alt=caption.closest('figure').querySelector('img')?.alt;
@@ -45,8 +46,8 @@
     if(anchor){
       const content=document.createDocumentFragment();
       [...text.childNodes].forEach(node=>{if(node===anchor){while(node.firstChild)content.append(node.firstChild);}else content.append(node);});
-      anchor.replaceChildren(content);anchor.title=anchor.textContent.replace(/\s+/g,' ').trim();caption.replaceChildren(anchor);
-    }else {caption.replaceChildren(...text.childNodes);}
+      anchor.replaceChildren(content);anchor.title=anchor.textContent.replace(/\s+/g,' ').trim();caption.replaceChildren(label,anchor);
+    }else {caption.replaceChildren(label,...text.childNodes);}
   });
   document.querySelectorAll('#actualizacion .review-decision').forEach(detail=>{
     detail.classList.add('review-stop');detail.open=true;

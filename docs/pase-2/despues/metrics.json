@@ -1,0 +1,146 @@
+[
+  {
+    "textCount": 1011,
+    "small": [
+      {
+        "size": 12,
+        "text": "Total parcial: faltan 10 importes.",
+        "tag": "STRONG",
+        "cls": ""
+      }
+    ],
+    "tiny": [],
+    "short": [],
+    "headingTimes": [],
+    "overflow": false,
+    "width": 320,
+    "expanded": false,
+    "smallPercent": 0.1
+  },
+  {
+    "textCount": 1825,
+    "small": [
+      {
+        "size": 12,
+        "text": "Total parcial: faltan 10 importes.",
+        "tag": "STRONG",
+        "cls": ""
+      }
+    ],
+    "tiny": [],
+    "short": [],
+    "headingTimes": [],
+    "overflow": false,
+    "width": 320,
+    "expanded": true,
+    "smallPercent": 0.05
+  },
+  {
+    "textCount": 1011,
+    "small": [
+      {
+        "size": 12,
+        "text": "Total parcial: faltan 10 importes.",
+        "tag": "STRONG",
+        "cls": ""
+      }
+    ],
+    "tiny": [],
+    "short": [],
+    "headingTimes": [],
+    "overflow": false,
+    "width": 390,
+    "expanded": false,
+    "smallPercent": 0.1
+  },
+  {
+    "textCount": 1825,
+    "small": [
+      {
+        "size": 12,
+        "text": "Total parcial: faltan 10 importes.",
+        "tag": "STRONG",
+        "cls": ""
+      }
+    ],
+    "tiny": [],
+    "short": [],
+    "headingTimes": [],
+    "overflow": false,
+    "width": 390,
+    "expanded": true,
+    "smallPercent": 0.05
+  },
+  {
+    "textCount": 1015,
+    "small": [
+      {
+        "size": 12,
+        "text": "Total parcial: faltan 10 importes.",
+        "tag": "STRONG",
+        "cls": ""
+      }
+    ],
+    "tiny": [],
+    "short": [],
+    "headingTimes": [],
+    "overflow": false,
+    "width": 768,
+    "expanded": false,
+    "smallPercent": 0.1
+  },
+  {
+    "textCount": 1829,
+    "small": [
+      {
+        "size": 12,
+        "text": "Total parcial: faltan 10 importes.",
+        "tag": "STRONG",
+        "cls": ""
+      }
+    ],
+    "tiny": [],
+    "short": [],
+    "headingTimes": [],
+    "overflow": false,
+    "width": 768,
+    "expanded": true,
+    "smallPercent": 0.05
+  },
+  {
+    "textCount": 1016,
+    "small": [
+      {
+        "size": 12,
+        "text": "Total parcial: faltan 10 importes.",
+        "tag": "STRONG",
+        "cls": ""
+      }
+    ],
+    "tiny": [],
+    "short": [],
+    "headingTimes": [],
+    "overflow": false,
+    "width": 1440,
+    "expanded": false,
+    "smallPercent": 0.1
+  },
+  {
+    "textCount": 1830,
+    "small": [
+      {
+        "size": 12,
+        "text": "Total parcial: faltan 10 importes.",
+        "tag": "STRONG",
+        "cls": ""
+      }
+    ],
+    "tiny": [],
+    "short": [],
+    "headingTimes": [],
+    "overflow": false,
+    "width": 1440,
+    "expanded": true,
+    "smallPercent": 0.05
+  }
+]

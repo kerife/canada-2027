@@ -4,15 +4,15 @@ Base: versión publicada al iniciar, rama `pase-2-pulido` desde main. HTML/CSS/J
 
 Flujo probado: portada → fecha por clic/teclado → detalle de parada → lista completa → presupuesto → restablecer → impresión.
 
-- [ ] 1. Escala de lectura y metadatos; métricas de nodos visibles.
-- [ ] 2. Altura y separación de controles; medir a 390.
-- [ ] 3. Horas en elementos time conservando caracteres.
-- [ ] 4. Un detalle por parada con subsecciones; primera abierta.
-- [ ] 5. Crédito visible bajo cada foto.
-- [ ] 6. Revisión abierta y con ritmo del componente de parada.
-- [ ] 7. Pendientes en tinta neutra y badge.
-- [ ] 8. Cuadrícula de hoteles sin huérfana.
-- [ ] 9. Cifras parciales derivadas de la salida existente, sin modificar cálculo.
+- [x] 1. Escala de lectura y metadatos; métricas de nodos visibles.
+- [x] 2. Altura y separación de controles; medir a 390.
+- [x] 3. Horas en elementos time conservando caracteres.
+- [x] 4. Un detalle por parada con subsecciones; primera abierta.
+- [x] 5. Crédito visible bajo cada foto.
+- [x] 6. Revisión abierta y con ritmo del componente de parada.
+- [x] 7. Pendientes en tinta neutra y badge.
+- [x] 8. Cuadrícula de hoteles sin huérfana.
+- [x] 9. Cifras parciales derivadas de la salida existente, sin modificar cálculo.
 
 Verificación: paridad por parada y bloques, diez escenarios exactos del cálculo, pestañas, axe WCAG 2/2.1 A/AA, red, 320/390/768/1440 y PDF. Capturas con fotografías decodificadas en `antes/` y `despues/`.
 
