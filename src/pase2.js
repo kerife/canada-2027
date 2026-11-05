@@ -57,4 +57,18 @@
     if(!/pendiente|por cotizar|por confirmar/i.test(price.textContent))return;
     price.classList.add('pending-price');const badge=document.createElement('span');badge.className='state-badge';badge.dataset.states='pending';badge.dataset.editorialUi='';badge.textContent='[Pendiente de confirmar]';price.after(badge);
   });
+  const values=['total-person','total-couple'].map(id=>{
+    const original=document.getElementById(id);const amount=document.createElement('p');amount.className='summary-amount';amount.dataset.editorialUi='';
+    const missing=document.createElement('p');missing.className='summary-missing fine';missing.dataset.editorialUi='';original.after(amount,missing);return {amount,missing};
+  });
+  function showKnownAmounts(){
+    // Reuse the already-rendered exact output, including its reserve and rounding.
+    const exact=document.getElementById('exact-total').textContent.match(/: ([^:]+)\/persona y ([^:]+)\/pareja\.$/);
+    const pending=document.querySelectorAll('#pending-costs li').length;
+    values.forEach((view,index)=>{
+      view.amount.textContent=exact?exact[index+1]:'—';
+      view.missing.textContent=pending?`Faltan ${pending} conceptos por cotizar`:'Todos los conceptos seleccionados tienen importe.';
+    });
+  }
+  new MutationObserver(showKnownAmounts).observe(document.getElementById('exact-total'),{childList:true,subtree:true});showKnownAmounts();
 })();

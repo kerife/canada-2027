@@ -82,8 +82,34 @@ body input[type=checkbox] { min-height:var(--tap);height:var(--tap);width:var(--
 #inicio .hotel-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
 #inicio .hotel-card:last-child:nth-child(odd) { grid-column:1 / -1; }
 #inicio .hotel-body h3 { height:var(--hotel-heading-height);font-size:var(--text-title);line-height:1.2; }
+#inicio #total-person,#inicio #total-couple { font:500 var(--text-meta)/1.65 var(--sans);color:inherit; }
+#inicio .summary-amount { font:400 var(--text-figure)/1.2 var(--serif);font-variant-numeric:tabular-nums;margin:var(--space-2) 0;overflow-wrap:anywhere; }
+#inicio .summary-missing { margin-top:var(--space-2); }
 @media screen and (max-width:1199px) {
   #inicio .hotel-grid { grid-template-columns:minmax(0,1fr); }
+}
+@media print {
+  body a,body button,body select,body summary { min-height:0; }
+  body input[type=checkbox] { min-height:0;width:12px;height:12px; }
+  #inicio p,#inicio li,#inicio dd,#inicio label { font-size:10px;line-height:1.6; }
+  #inicio :is(.fine,.evidence,.option-note,.original-price,.slot-duration,.budget-explanation,.place-highlights,.activity-meta,.mobile-reason,.state-badge) { font-size:9px;line-height:1.6; }
+  #inicio a:not(.button),#inicio .source,#inicio .story-sources .source,#inicio .hotel-body .source { font-size:8px!important;display:inline;min-height:0;padding:0;margin:0; }
+  #inicio summary { margin:0;min-height:0;font-size:10px; }
+  #inicio .stop-heading h3 { font-size:20px; }
+  #inicio .stop-heading time { font-size:10px; }
+  #inicio .stop-subsection { margin:8px 0;padding:0; }
+  #inicio .stop-subsection h4 { font-size:14px; }
+  #inicio .photo-credit { height:auto;max-height:none;min-height:0;font-size:8px;line-height:1.5; }
+  #inicio .photo-credit>a { position:static;transform:none;height:auto;min-height:0!important;line-height:1.5;white-space:normal;overflow:visible;display:block!important;font-size:8px!important; }
+  #inicio .hero-photo { height:100%; }
+  #inicio .hero-photo .photo-credit { inset:auto 8px 8px auto;width:240px;max-width:240px!important;padding:8px!important; }
+  #inicio .review-stop { padding-bottom:12px;margin-bottom:12px; }
+  #inicio .review-stop>summary,#inicio .review-stop>summary h3 { min-height:0;font-size:20px;padding:4px 0; }
+  #inicio .hotel-body h3 { height:auto;font-size:25px; }
+  #inicio .hotel-grid { display:block; }
+  #inicio .pending-price { font-size:20px; }
+  #inicio .summary-card { max-height:none; }
+  #inicio .summary-amount { font-size:28px; }
 }
 @media screen and (max-width:650px) {
   :root { --nav-height:97px;--hotel-heading-height:calc(var(--text-title) * 3.6); }
