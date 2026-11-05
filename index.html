@@ -676,6 +676,7 @@ input,select { font-size:var(--text-small); }
 .topbar nav { font-size:var(--text-meta); }
 .endnote { font-size:var(--text-meta); }
 body a,body button,body select,body summary { min-height:var(--tap); }
+body a,body button,body select,body summary { min-width:var(--tap); }
 body a { display:inline-flex;align-items:center; }
 body input[type=checkbox] { min-height:var(--tap);height:var(--tap);width:var(--tap); }
 .brand { min-height:var(--tap); }
@@ -684,6 +685,9 @@ body input[type=checkbox] { min-height:var(--tap);height:var(--tap);width:var(--
 #inicio .source { margin:var(--space-1) var(--tap-gap) var(--space-1) 0; }
 #inicio :is(.date-tabs,.day-controls,.view-switch,.people-stepper,.story-sources,.route-position) { gap:var(--tap-gap); }
 #inicio .people-stepper select { min-width:var(--tap); }
+#inicio .people-stepper { flex-wrap:wrap; }
+#inicio .people-stepper button { flex:0 0 var(--tap);width:var(--tap); }
+#inicio .people-stepper select { order:-1;flex-basis:100%; }
 #inicio .route-position button { border:0;border-bottom:2px solid transparent;background:transparent;color:var(--ink);font:inherit;padding:var(--space-2); }
 #inicio .route-position span { border:0;padding:0; }
 #inicio .route-position button:has([data-active]) { border-color:var(--accent); }
@@ -769,6 +773,8 @@ body input[type=checkbox] { min-height:var(--tap);height:var(--tap);width:var(--
   #inicio .view-switch button { white-space:nowrap; }
   .topbar .wrap { width:calc(100% - 32px); }
   #inicio .budget-options tr { grid-template-columns:minmax(0,1fr) 164px; }
+  #inicio .people-stepper { flex-wrap:nowrap; }
+  #inicio .people-stepper select { order:0;flex-basis:52px; }
   #inicio .summary-card { max-height:none; }
   #inicio .hotel-grid { grid-template-columns:minmax(0,1fr); }
 }
@@ -1395,7 +1401,7 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
     old.before(row);row.append(heading);
     if(match){
       heading.textContent=text.slice(0,match.index);const time=document.createElement('time');
-      time.textContent=text.slice(match.index);const clock=time.textContent.match(/\d{1,2}:\d{2}/)[0];
+      time.textContent=text.slice(match.index).replace(/^\s*·\s*/,' ');const clock=time.textContent.match(/\d{1,2}:\d{2}/)[0];
       time.dateTime=`2027-02-${old.closest('.activity-card').dataset.day}T${clock.padStart(5,'0')}:00-05:00`;row.append(time);
     }else heading.textContent=text;
     old.remove();

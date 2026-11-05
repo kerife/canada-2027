@@ -15,7 +15,7 @@
     old.before(row);row.append(heading);
     if(match){
       heading.textContent=text.slice(0,match.index);const time=document.createElement('time');
-      time.textContent=text.slice(match.index);const clock=time.textContent.match(/\d{1,2}:\d{2}/)[0];
+      time.textContent=text.slice(match.index).replace(/^\s*·\s*/,' ');const clock=time.textContent.match(/\d{1,2}:\d{2}/)[0];
       time.dateTime=`2027-02-${old.closest('.activity-card').dataset.day}T${clock.padStart(5,'0')}:00-05:00`;row.append(time);
     }else heading.textContent=text;
     old.remove();
