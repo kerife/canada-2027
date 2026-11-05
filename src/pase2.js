@@ -46,7 +46,8 @@
     if(anchor){
       const content=document.createDocumentFragment();
       [...text.childNodes].forEach(node=>{if(node===anchor){while(node.firstChild)content.append(node.firstChild);}else content.append(node);});
-      anchor.replaceChildren(content);anchor.title=anchor.textContent.replace(/\s+/g,' ').trim();caption.replaceChildren(label,anchor);
+      const copy=document.createElement('span');copy.className='photo-credit__text';copy.append(content);
+      anchor.replaceChildren(copy);anchor.title=anchor.textContent.replace(/\s+/g,' ').trim();caption.replaceChildren(label,anchor);
     }else {caption.replaceChildren(label,...text.childNodes);}
   });
   document.querySelectorAll('#actualizacion .review-decision').forEach(detail=>{
