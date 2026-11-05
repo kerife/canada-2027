@@ -47,4 +47,9 @@
       anchor.replaceChildren(content);anchor.title=anchor.textContent.replace(/\s+/g,' ').trim();caption.replaceChildren(anchor);
     }else {caption.replaceChildren(...text.childNodes);}
   });
+  document.querySelectorAll('#actualizacion .review-decision').forEach(detail=>{
+    detail.classList.add('review-stop');detail.open=true;
+    const summary=detail.querySelector(':scope>summary');const body=document.createElement('div');body.className='review-stop-body';
+    while(summary.nextSibling)body.append(summary.nextSibling);detail.append(body);
+  });
 })();
